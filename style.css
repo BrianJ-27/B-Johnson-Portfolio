@@ -1,9 +1,3 @@
-/*
-  Theme Name: Brian's Digital Portfolio
-  Author: Brian Johnson
-  Version: 1.0
-*/
-
 /*-----Descriptive Color Variables-----*/
 /*-----Project Color Variables-----*/
 /*-----Functional Color Variables-----*/
@@ -849,7 +843,6 @@ summary {
 }
 
 .img__header--container {
-  background: url("../img/BJ-Site-Portfolio-BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

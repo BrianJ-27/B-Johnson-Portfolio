@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?> >
 
 <head>
     <?php wp_head(); ?>
 </head>
 
-<body id="main__content" class="website__container">
+<body <?php body_class();?> id="main__content" class="website__container">
     <!--Navigation Menu hidden to the right until user clicks the menu-->
     <nav id="side__nav" class="nav__sidebar--container">
         <header class="nav__header--container">
-            <img class="logo__img" src="img/bj-logo.jpg" alt="Brian Johnson Logo">
+            <img class="logo__img" src="<?php echo get_theme_file_uri('img/bj-logo.jpg');?>" alt="Brian Johnson Logo">
             <p class="nav__title">Brian's Portfolio</p>
             <div class="close__btn">X</div>
         </header>
@@ -66,7 +66,7 @@
 
     <!--Header Site Content Starts Here-->
     <header class="header__container">
-        <div class="img__header--container">
+        <div class="img__header--container" style="background-image: url(http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png);">
 
             <!--Header Bar Mark-up Starts Here-->
             <div id="my-hdr-bar" class="header__bar--container">
@@ -90,19 +90,19 @@
 
             <!--Header Brian's Face Mark-up Starts Here-->
             <div class="my__face--container">
-                <img class="my__face" src="img/BJ-Site-Portfolio-face.png" alt="My Face">
+                <img class="my__face" src="<?php echo get_theme_file_uri('img/BJ-Site-Portfolio-face.png');?>" alt="My Face">
             </div>
             <!--Header Brian's Face Mark-up Ends Here-->
 
             <!--Header Cool Smoke Effect Mark-up Starts Here-->
             <div class="smoke__container">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="img/smoke-fumes-transparent-1-.png" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
             </div>
         </div>
         <!--Header Cool Smoke Effect Mark-up Ends Here-->

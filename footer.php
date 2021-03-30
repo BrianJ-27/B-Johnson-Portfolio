@@ -4,5 +4,5 @@
     </footer>
     <!--Footer Content Ends Here-->
 </body>
-
+<?php wp_footer();?>
 </html>

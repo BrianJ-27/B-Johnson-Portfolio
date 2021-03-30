@@ -26,10 +26,10 @@ window.onscroll = () => {
   }
 }
 
-//In mobile mode, when a user clicks anywhere on a card the overlay will show
-$('.main__grid--container').click(function(){
-  $('.card__overlay').addClass('.card__overlay');
-});
+// //In mobile mode, when a user clicks anywhere on a card the overlay will show
+// $('.main__grid--container').click(function(){
+//   $('.card__overlay').addClass('.card__overlay');
+// });
 
 
 /*--Add Smooth Scroll to Page--*/

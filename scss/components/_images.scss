@@ -3,7 +3,6 @@
 // **************************************
 
 .img__header--container{
-    background: url('../img/BJ-Site-Portfolio-BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +18,7 @@
     @include mq('md'){
         flex-basis: 48%; 
     }
- }
+}
 
 .bio__content{
     background: url('../img/smoke-fumes-transparent-right-.png');
@@ -49,7 +48,7 @@
     background: rgba(0,0,0,0.7);
     border-radius: 80% 45% 0% 0%;
     @include mq('md'){
-        width: 65%;
+      width: 65%;
      } 
     @include mq ('lg'){
       width: 45%;

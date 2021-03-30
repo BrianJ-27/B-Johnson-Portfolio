@@ -9,7 +9,7 @@ while(have_posts()) {
             <h2 class="title__secondary"> The Journey </h2>
             <div class="flex__container--bio">
                 <figure class="bio__img--wrapper">
-                    <img class="img__bio" src="img/Brian-with-glasses.png" alt="Brian With Glasses On">
+                    <img class="img__bio" src="<?php echo get_theme_file_uri('img/Brian-with-glasses.png');?>" alt="Brian With Glasses On">
                 </figure>
                 <div class="bio__content">
                     <h3 class="title__tertiary">A Little About BJ</h3>
@@ -123,8 +123,8 @@ while(have_posts()) {
                     
                 
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="img/8th-project_800px.png"
-                                alt="8th project of Treehouse Techdegree">
+                            <img class="card-img-top img-fluid" src="<?php echo get_theme_file_uri('img/8th-project_800px.png');?>"
+                                alt="Employee Directory App">
                             <div class="card-block">
                                 <h4 class="card-title"> Employee Directory:</h4>
                                 <div class="card__content-container">
@@ -158,7 +158,7 @@ while(have_posts()) {
 
                     
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="img/7th-project_800px.png"
+                            <img class="card-img-top img-fluid" src="<?php echo get_theme_file_uri('img/7th-project_800px.png')?>"
                                 alt="8th project of Treehouse Techdegree">
                             <div class="card-block">
                                 <h4 class="card-title"> Web App Dashboard:</h4>
@@ -191,7 +191,7 @@ while(have_posts()) {
 
                     
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="img/6th-project_800px.png"
+                            <img class="card-img-top img-fluid" src="<?php echo get_theme_file_uri('img/6th-project_800px.png');?>"
                                 alt="8th project of Treehouse Techdegree">
                             <div class="card-block">
                                 <h4 class="card-title"> Game Show App:</h4>
@@ -222,8 +222,8 @@ while(have_posts()) {
 
                     
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="img/5th-project_800px.png"
-                                alt="8th project of Treehouse Techdegree">
+                            <img class="card-img-top img-fluid" src="<?php echo get_theme_file_uri('img/5th-project_800px.png');?>"
+                                alt="Photo Gallery Web Project">
                             <div class="card-block">
                                 <h4 class="card-title"> Photo Gallery App:</h4>
                                 <div class="card__content-container">
@@ -259,7 +259,7 @@ while(have_posts()) {
 
                     
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="img/Zoo-Institute-website_800px.png"
+                            <img class="card-img-top img-fluid" src="<?php echo get_theme_file_uri('img/Zoo-Institute-website_800px.png');?>"
                                 alt="8th project of Treehouse Techdegree">
                             <div class="card-block">
                                 <h4 class="card-title"> Zoo Institute:</h4>
@@ -314,7 +314,7 @@ while(have_posts()) {
 
                 <article class="flex__container--reviews">
                     <div class="img__title--container">
-                        <img class="img__person rounded-circle img-fluid" src="img/randy.jpg"
+                        <img class="img__person rounded-circle img-fluid" src="<?php echo get_theme_file_uri('img/randy.jpg');?>"
                             alt="Picture of Randy Layne">
                         <h4 class="dark-grey-text review__name">Randy Layne</h4>
                         <h6 class="blue-text review__title">Student Success Specialist</h6>
@@ -331,7 +331,7 @@ while(have_posts()) {
 
                 <article class="flex__container--reviews">
                     <div class="img__title--container">
-                        <img class="img__person rounded-circle img-fluid" src="img/alicia.jpg"
+                        <img class="img__person rounded-circle img-fluid" src="<?php echo get_theme_file_uri('img/alicia.jpg');?>"
                             alt="Picture of Alicia Mendez">
                         <h4 class="dark-grey-text review__name">Alicia Mendez </h4>
                         <h6 class="blue-text review__title">CEO /Brand President </h6>
@@ -348,7 +348,7 @@ while(have_posts()) {
 
                 <article class="flex__container--reviews">
                     <div class="img__title--container">
-                        <img class="img__person rounded-circle img-fluid" src="img/nestor.png"
+                        <img class="img__person rounded-circle img-fluid" src="<?php echo get_theme_file_uri('img/nestor.png');?>"
                             alt="Picture of Nestor Padilla">
                         <h4 class="dark-grey-text review__name">Nestor Padilla</h4>
                         <h6 class="blue-text review__title">Senior Developer</h6>
