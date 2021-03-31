@@ -864,7 +864,6 @@ summary {
 }
 
 .bio__content {
-  background: url("../img/smoke-fumes-transparent-right-.png");
   background-color: transparent;
 }
 @media (min-width: 768px) {

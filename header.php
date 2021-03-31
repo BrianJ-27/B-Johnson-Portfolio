@@ -16,44 +16,44 @@
         <ul class="nav__wrapper">
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#home"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#home')?>"></use>
                 </svg>
-                <a class="nav__link" href="#main__content">home</a>
+                <a class="nav__link scroll" href="#main__content">home</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#person"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#person');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon2" href="#about__me">about me</a>
+                <a class="nav__link nav__icon2 scroll" href="#about__me">about me</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#skills"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#skills');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon3" href="#skills">skills</a>
+                <a class="nav__link nav__icon3 scroll" href="#skills">skills</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#experience"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#experience')?>"></use>
                 </svg>
-                <a class="nav__link nav__icon4" href="#projects">experience</a>
+                <a class="nav__link nav__icon4 scroll" href="#projects">experience</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#references"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#references');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon5" href="#references">references</a>
+                <a class="nav__link nav__icon5 scroll" href="#references">references</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="icons/bjs-icon-map.svg#contact"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#contact');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon6" href="#contact">contact me</a>
+                <a class="nav__link nav__icon6 scroll" href="#contact">contact me</a>
             </li>
             <!-- <li class="nav__item">
                 <button class="btn--resume">
