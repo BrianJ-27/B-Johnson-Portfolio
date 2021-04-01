@@ -416,14 +416,17 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   transition: 0.5s;
+  background-color: #0D0D0D;
 }
 
 main {
   background: #0D0D0D;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 details {

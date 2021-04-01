@@ -20,7 +20,7 @@
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#home'));?>"></use>
                 </svg>
-                <a class="nav__link scroll" href="<?php echo esc_url(site_url('#main-content'));?>"> <?php _e('home');?></a>
+                <a class="nav__link scroll" href="<?php echo esc_url(site_url());?>"> <?php _e('home');?></a>
             </li>
 
             <li class="nav__item">
@@ -57,6 +57,12 @@
                 </svg>
                 <a class="nav__link nav__icon6 scroll" href="<?php echo esc_url(site_url('#contact'));?>"><?php _e('contact me');?></a>
             </li>
+            <li class="nav__item">
+                <svg class="nav__icon">
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#blog'));?>"></use>
+                </svg>
+                <a class="nav__link nav__icon6 scroll" href="<?php echo esc_url(site_url('/blog'));?>"><?php _e('bj\'s blog');?></a>
+            </li>
             <!-- <li class="nav__item">
                 <button class="btn--resume">
                     <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf">resume
@@ -75,10 +81,10 @@
                     <div class="menu__btn--burger"></div>
                 </div>
                 <div class="header__btn--resume">
-                    <button class="btn--resume">
+                    <div class="btn--resume">
                         <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf"><?php _e('resume');?>
                         </a>
-                    </button>
+                    </div>
                 </div>
             </div>
             <!--Header Bar Mark-up Ends Here-->    
