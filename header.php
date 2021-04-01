@@ -12,7 +12,7 @@
     <nav id="side__nav" class="nav__sidebar--container">
         <header class="nav__header--container">
             <img class="logo__img" src="<?php echo get_theme_file_uri('img/bj-logo.jpg');?>" alt="Brian Johnson Logo">
-            <p class="nav__title">Brian's Portfolio</p>
+            <p class="nav__title"><?php _e('Brian\'s Portfolio');?></p>
             <div class="close__btn">X</div>
         </header>
         <ul class="nav__wrapper">
@@ -20,42 +20,42 @@
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#home')?>"></use>
                 </svg>
-                <a class="nav__link scroll" href="#main__content">home</a>
+                <a class="nav__link scroll" href="#main__content"><?php _e('home');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#person');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon2 scroll" href="#about__me">about me</a>
+                <a class="nav__link nav__icon2 scroll" href="#about__me"><?php _e('about me');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#skills');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon3 scroll" href="#skills">skills</a>
+                <a class="nav__link nav__icon3 scroll" href="#skills"><?php _e('skills');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#experience')?>"></use>
                 </svg>
-                <a class="nav__link nav__icon4 scroll" href="#projects">experience</a>
+                <a class="nav__link nav__icon4 scroll" href="#projects"><?php _e('experience');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#references');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon5 scroll" href="#references">references</a>
+                <a class="nav__link nav__icon5 scroll" href="#references"><?php _e('references');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#contact');?>"></use>
                 </svg>
-                <a class="nav__link nav__icon6 scroll" href="#contact">contact me</a>
+                <a class="nav__link nav__icon6 scroll" href="#contact"><?php _e('contact me');?></a>
             </li>
             <!-- <li class="nav__item">
                 <button class="btn--resume">
@@ -77,7 +77,7 @@
                 </div>
                 <div class="header__btn--resume">
                     <button class="btn--resume">
-                        <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf">resume
+                        <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf"><?php _e('resume');?>
                         </a>
                     </button>
                 </div>
@@ -85,7 +85,7 @@
             <!--Header Bar Mark-up Ends Here-->
 
             <div class="header__title--container">
-                <h1 class="header__title">Brian Johnson </h1>
+                <h1 class="header__title">Brian Johnson</h1>
                 <h3 class="sub__title">Front-End Developer</h3>
                 <hr class="title__underline">
             </div>
