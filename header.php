@@ -92,19 +92,19 @@
 
             <!--Header Brian's Face Mark-up Starts Here-->
             <div class="my__face--container">
-                <img class="my__face" src="<?php echo get_theme_file_uri('img/BJ-Site-Portfolio-face.png');?>" alt="My Face">
+                <img class="my__face" src="<?php echo get_theme_file_uri('assets/img/BJ-Site-Portfolio-face.png');?>" alt="My Face">
             </div>
             <!--Header Brian's Face Mark-up Ends Here-->
 
             <!--Header Cool Smoke Effect Mark-up Starts Here-->
             <div class="smoke__container">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
             </div>
         </div>
         <!--Header Cool Smoke Effect Mark-up Ends Here-->
