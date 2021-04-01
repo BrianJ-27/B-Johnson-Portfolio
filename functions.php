@@ -9,7 +9,7 @@ function portfolio_files(){
 
     //Current scripts for the page
     
-    wp_enqueue_script( 'js-file', get_template_directory_uri() . '/js/main.js', NULL, '1.0', true);
+    wp_enqueue_script( 'js-file', get_template_directory_uri() . '/assets/js/main.js', NULL, '1.0', true);
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.4.1.min.js/', NULL, '1.0', true);
 
     /**If comments are enabled by the user, and we are on a post page, 
