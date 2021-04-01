@@ -1,6 +1,12 @@
-<?php get_header(); ?>
+<?php get_header(); 
 
+while(have_posts()){
+    the_post(); ?>
+        <section>
+        
+        </section>
 
-<h1>This is my new blog page</h1>
+<?php } 
+get_footer(); 
 
-<?php get_footer(); ?>
+?>

@@ -68,8 +68,6 @@
 
     <!--Header Site Content Starts Here-->
     <header class="header__container">
-        <div class="img__header--container" style="background-image: url(http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png);">
-
             <!--Header Bar Mark-up Starts Here-->
             <div id="my-hdr-bar" class="header__bar--container">
                 <div id="home__btn" class="header__btn--menu">
@@ -82,31 +80,6 @@
                     </button>
                 </div>
             </div>
-            <!--Header Bar Mark-up Ends Here-->
-
-            <div class="header__title--container">
-                <h1 class="header__title">Brian Johnson</h1>
-                <h3 class="sub__title">Front-End Developer</h3>
-                <hr class="title__underline">
-            </div>
-
-            <!--Header Brian's Face Mark-up Starts Here-->
-            <div class="my__face--container">
-                <img class="my__face" src="<?php echo esc_url(get_theme_file_uri('assets/img/BJ-Site-Portfolio-face.png'));?>" alt="My Face">
-            </div>
-            <!--Header Brian's Face Mark-up Ends Here-->
-
-            <!--Header Cool Smoke Effect Mark-up Starts Here-->
-            <div class="smoke__container">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
-            </div>
-        </div>
-        <!--Header Cool Smoke Effect Mark-up Ends Here-->
+            <!--Header Bar Mark-up Ends Here-->    
     </header>
     <!--Header Site Content Ends Here-->

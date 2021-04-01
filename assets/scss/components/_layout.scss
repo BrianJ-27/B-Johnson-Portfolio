@@ -36,6 +36,17 @@
 
 }
 
+.img__banner--container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  max-height: 600px;
+  position: relative;
+  width: 100%;
+}
+
 .img__title--container{
     padding: 1em;
     z-index: 2;
