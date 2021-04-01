@@ -11,49 +11,49 @@
     <!--Navigation Menu hidden to the right until user clicks the menu-->
     <nav id="side__nav" class="nav__sidebar--container">
         <header class="nav__header--container">
-            <img class="logo__img" src="<?php echo get_theme_file_uri('img/bj-logo.jpg');?>" alt="Brian Johnson Logo">
+            <img class="logo__img" src="<?php echo esc_url(get_theme_file_uri('img/bj-logo.jpg'));?>" alt="Brian Johnson Logo">
             <p class="nav__title"><?php _e('Brian\'s Portfolio');?></p>
             <div class="close__btn">X</div>
         </header>
         <ul class="nav__wrapper">
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#home')?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#home'));?>"></use>
                 </svg>
                 <a class="nav__link scroll" href="#main__content"><?php _e('home');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#person');?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#person'));?>"></use>
                 </svg>
                 <a class="nav__link nav__icon2 scroll" href="#about__me"><?php _e('about me');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#skills');?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#skills'));?>"></use>
                 </svg>
                 <a class="nav__link nav__icon3 scroll" href="#skills"><?php _e('skills');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#experience')?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#experience'));?>"></use>
                 </svg>
                 <a class="nav__link nav__icon4 scroll" href="#projects"><?php _e('experience');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#references');?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#references'));?>"></use>
                 </svg>
                 <a class="nav__link nav__icon5 scroll" href="#references"><?php _e('references');?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
-                    <use xlink:href="<?php echo get_theme_file_uri('icons/bjs-icon-map.svg#contact');?>"></use>
+                    <use xlink:href="<?php echo esc_url(get_theme_file_uri('icons/bjs-icon-map.svg#contact'));?>"></use>
                 </svg>
                 <a class="nav__link nav__icon6 scroll" href="#contact"><?php _e('contact me');?></a>
             </li>
@@ -92,19 +92,19 @@
 
             <!--Header Brian's Face Mark-up Starts Here-->
             <div class="my__face--container">
-                <img class="my__face" src="<?php echo get_theme_file_uri('assets/img/BJ-Site-Portfolio-face.png');?>" alt="My Face">
+                <img class="my__face" src="<?php echo esc_url(get_theme_file_uri('assets/img/BJ-Site-Portfolio-face.png'));?>" alt="My Face">
             </div>
             <!--Header Brian's Face Mark-up Ends Here-->
 
             <!--Header Cool Smoke Effect Mark-up Starts Here-->
             <div class="smoke__container">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
-                <img class="smoke__img" src="<?php echo get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png');?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
+                <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png'));?>" alt="Cool Smoke Shape 1 ">
             </div>
         </div>
         <!--Header Cool Smoke Effect Mark-up Ends Here-->
