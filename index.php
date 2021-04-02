@@ -25,19 +25,21 @@
                                 <img src="http://my-portfolio.local/wp-content/uploads/2021/04/Lunch-Box.jpg" alt="HTML Image">
                             </div>
 
-                            <div class="post_box_data">
-                                <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
-                                <p class="post_box_data">Posted by Brian on 4/1/21 in </p>
+                            <div class="post_box_data--container">
+                                <h4 class="blog__title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+                                <p class="post_box_data">Posted by<?php the_author_posts_link();?>on <?php the_time('n.j.y');?> in <?php echo get_the_category_list(',');?> </p>
                                 <p class="post__dynamic--content"><?php the_excerpt();?></p>
-                                <p><a href="<?php the_permalink();?>">View More &raquo;</a></p>
+                                <p><a href="<?php the_permalink();?>" class="btn__primary">View More &raquo;</a></p>
                             </div>
                         </div>
             <?php }
+            echo paginate_links();
             ?>
         </section>
         <div class="side__resource--column">
                         
         </div>
+        
     </main>
 
 <?php get_footer(); ?>
