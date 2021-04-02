@@ -1191,10 +1191,10 @@ div#my-hdr-bar.header__bar--container.onscroll {
 /*-Styles for resume button in header bar-*/
 .btn--resume {
   outline: none;
-  border-color: #fff;
   color: #fff;
   background: transparent;
   border-radius: 20px 0 20px;
+  border: 1px solid #fff;
   transition: background 0.4s ease-in-out;
 }
 .btn--resume:hover {
@@ -1204,6 +1204,8 @@ div#my-hdr-bar.header__bar--container.onscroll {
 
 /*-Styles for resume button link in header bar (a tag nested within btn tag)-*/
 .link--resume {
+  border-radius: 20px 0 20px;
+  border: 1px solid #fff;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;

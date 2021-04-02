@@ -20,17 +20,19 @@
                 while(have_posts()){
                     the_post(); ?>
                         <div class="main__story-column">
-                            <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+                            
+                            <div class="post__img--container">
+                                <img src="http://my-portfolio.local/wp-content/uploads/2021/04/Lunch-Box.jpg" alt="HTML Image">
+                            </div>
 
                             <div class="post_box_data">
-                                <p>Posted by Brian on 4/1/21 in </p>
-                            </div>
-
-                            <div class="post__dynamic--content">
-                                <p><?php the_content();?></p>
+                                <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+                                <p class="post_box_data">Posted by Brian on 4/1/21 in </p>
+                                <p class="post__dynamic--content"><?php the_excerpt();?></p>
+                                <p><a href="<?php the_permalink();?>">View More &raquo;</a></p>
                             </div>
                         </div>
-               <?php }
+            <?php }
             ?>
         </section>
         <div class="side__resource--column">
