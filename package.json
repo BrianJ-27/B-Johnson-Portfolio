@@ -1,5 +1,5 @@
 {
-  "name": "fictional-university-theme",
+  "name": "brians-digital-portfolio-theme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -43,5 +43,9 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1"
   }
 }

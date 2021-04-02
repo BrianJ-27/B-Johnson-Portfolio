@@ -31,8 +31,8 @@ class RunAfterCompile {
         const scriptsRegEx = new RegExp("/bundled-assets/scripts.+?'", "g")
         const vendorsRegEx = new RegExp("/bundled-assets/vendors.+?'", "g")
         const cssRegEx = new RegExp("/bundled-assets/styles.+?'", "g")
-
-        let result = data.replace(scriptsRegEx, `/bundled-assets/${manifest["scripts.js"]}'`).replace(vendorsRegEx, `/bundled-assets/${manifest["vendors~scripts.js"]}'`).replace(cssRegEx, `/bundled-assets/${manifest["scripts.css"]}'`)
+        // changed where scripts.js to main.js
+        let result = data.replace(scriptsRegEx, `/bundled-assets/${manifest["main.js"]}'`).replace(vendorsRegEx, `/bundled-assets/${manifest["vendors~scripts.js"]}'`).replace(cssRegEx, `/bundled-assets/${manifest["scripts.css"]}'`)
 
         fse.writeFile("./functions.php", result, "utf8", function (err) {
           if (err) return console.log(err)
@@ -49,7 +49,7 @@ let cssConfig = {
 
 let config = {
   entry: {
-    scripts: "./js/scripts.js"
+    scripts: "./assets/js/main.js" // changed it here
   },
   plugins: [],
   module: {
@@ -73,7 +73,7 @@ if (currentTask == "devFast") {
   config.devtool = "source-map"
   cssConfig.use.unshift("style-loader")
   config.output = {
-    filename: "bundled.js",
+    filename: "./main.js", // changed it here
     publicPath: "http://localhost:3000/"
   }
   config.devServer = {
@@ -113,7 +113,7 @@ if (currentTask == "build" || currentTask == "buildWatch") {
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   postCSSPlugins.push(require("cssnano"))
   config.output = {
-    publicPath: "/wp-content/themes/fictional-university-theme/bundled-assets/",
+    publicPath: "/wp-content/themes/portfolio-bj/assets", //changed it here too
     filename: "[name].[chunkhash].js",
     chunkFilename: "[name].[chunkhash].js",
     path: path.resolve(__dirname, "bundled-assets")

@@ -1,6 +1,11 @@
 // **************************************
 // JAVASCRIPT SCRIPTS
 // **************************************
+import {mainNav} from './modules/mainNav'
+import {scroll} from './modules/scroll'
+import {hdrBarOnScroll} from './modules/hdrBarOnScroll'
+
+const hdrBar = new hdrBarOnScroll();
 
 /*---Global Variables----*/
 const openNav = document.querySelector(".header__btn--menu");
@@ -16,15 +21,7 @@ closeNav.addEventListener('click', () => {
   document.getElementById("side__nav").style.left = "-200px"; 
 });
 
-/*--Header Bar changes color when user starts scrolling--*/
-window.onscroll = () => {
-  let top = window.scrollY;
-  if(top >= 250){
-    hdrBar.classList.add('onscroll');
-  } else {
-    hdrBar.classList.remove('onscroll');
-  }
-}
+
 
 
 /*--Add Smooth Scroll to Page--*/
