@@ -1,67 +1,41 @@
-// **************************************
-// JAVASCRIPT SCRIPTS
-// **************************************
-import {mainNav} from './modules/mainNav'
-import {scroll} from './modules/scroll'
-import {hdrBarOnScroll} from './modules/hdrBarOnScroll'
-
-const hdrBar = new hdrBarOnScroll();
-
-/*---Global Variables----*/
-const openNav = document.querySelector(".header__btn--menu");
-const closeNav = document.querySelector(".close__btn");
-const hdrBar = document.getElementById('my-hdr-bar');
-
-/*--Toggle navigation once user clicks on nav menu--*/
-openNav.addEventListener('click', () => {
-    document.getElementById("side__nav").style.left = "0";
-});
-
-closeNav.addEventListener('click', () => {
-  document.getElementById("side__nav").style.left = "-200px"; 
-});
-
-
-
-
 /*--Add Smooth Scroll to Page--*/
-jQuery('a[href*="#"]')
+export const linkScroll = jQuery('a[href*="#"]')
   // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
-      var target = jQuery(this.hash);
-      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+        var target = jQuery(this.hash);
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
-      if (target.length) {
+        if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         jQuery('html, body').animate({
-          scrollTop: target.offset().top
+            scrollTop: target.offset().top
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
-          var $target = jQuery(target);
-          $target.focus();
+            var $target = jQuery(target);
+            $target.focus();
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
-          } else {
+            } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
+                    };
+                });
+            }
+        }
+    });
 
-// (function() {
+    // (function() {
 // 	scrollTo();
 // })();
 
