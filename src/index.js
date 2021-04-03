@@ -1,9 +1,9 @@
 // **************************************
 // JAVASCRIPT SCRIPTS
 // **************************************
-import ToggleNav from './modules/mainNav'
-import scroll from './modules/scroll'
-import hdrBarOnScroll from './modules/hdrBarOnScroll'
+import ToggleNav from './js/modules/mainNav'
+import {scroll} from './js/modules/scroll'
+import {hdrBarOnScroll} from './js/modules/hdrBarOnScroll'
 
 const nav = new ToggleNav();
 const linkScroll = new scroll();
