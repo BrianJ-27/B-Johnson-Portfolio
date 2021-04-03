@@ -12,19 +12,19 @@
 
         <!--Banner Brian's Face Mark-up Starts Here-->
         <div class="my__face--container">
-            <img class="my__face" src="<?php echo esc_url(get_theme_file_uri('assets/img/BJ-Site-Portfolio-face.png')); ?>" alt="My Face">
+            <img class="my__face" src="<?php echo esc_url(get_theme_file_uri('src/img/BJ-Site-Portfolio-face.png')); ?>" alt="My Face">
         </div>
         <!--Header Brian's Face Mark-up Ends Here-->
 
         <!--Header Cool Smoke Effect Mark-up Starts Here-->
         <div class="smoke__container">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('assets/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
+            <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
         </div>
     </div>
     <!--Header Cool Smoke Effect Mark-up Ends Here-->
@@ -37,7 +37,7 @@
         <h2 class="title__secondary"> The Journey </h2>
         <div class="flex__container--bio">
             <figure class="bio__img--wrapper">
-                <img class="img__bio" src="<?php echo esc_url(get_theme_file_uri('assets/img/Brian-with-glasses.png')); ?>" alt="Brian With Glasses On">
+                <img class="img__bio" src="<?php echo esc_url(get_theme_file_uri('src/img/Brian-with-glasses.png')); ?>" alt="Brian With Glasses On">
             </figure>
             <div class="bio__content" style="background-image: url('http://my-portfolio.local/wp-content/uploads/2021/03/smoke-fumes-transparent-right-.png'); ">
                 <h3 class="title__tertiary">A Little About BJ</h3>
@@ -60,37 +60,37 @@
                 <div class="grid__container">
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#html5')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#html5')); ?>"></use>
                         </svg>
                         <figcaption>HTML5</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                         </svg>
                         <figcaption>CSS3</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                         </svg>
                         <figcaption>JavaScript</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#php7')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#php7')); ?>"></use>
                         </svg>
                         <figcaption>PHP</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#scss')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#scss')); ?>"></use>
                         </svg>
                         <figcaption>Sass</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#bootstrap4')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#bootstrap4')); ?>"></use>
                         </svg>
                         <figcaption>Bootstrap</figcaption>
                     </figure>
@@ -101,37 +101,37 @@
                 <div class="grid__container">
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#vs-code')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#vs-code')); ?>"></use>
                         </svg>
                         <figcaption>VS Code</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#adobe-xd')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#adobe-xd')); ?>"></use>
                         </svg>
                         <figcaption>Adobe XD</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#photoshop')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#photoshop')); ?>"></use>
                         </svg>
                         <figcaption>Photoshop</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#mysql')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#mysql')); ?>"></use>
                         </svg>
                         <figcaption>MYSQL</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#wordpress')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#wordpress')); ?>"></use>
                         </svg>
                         <figcaption>WordPress</figcaption>
                     </figure>
                     <figure class="img__skill--container">
                         <svg class="skill-icons">
-                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#github')); ?>"></use>
+                            <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#github')); ?>"></use>
                         </svg>
                         <figcaption>Git & Github</figcaption>
                     </figure>
@@ -151,7 +151,7 @@
 
 
             <div class="card">
-                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/8th-project_800px.png')); ?>" alt="Employee Directory App">
+                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/8th-project_800px.png')); ?>" alt="Employee Directory App">
                 <div class="card-block">
                     <h4 class="card-title"> Employee Directory:</h4>
                     <div class="card__content-container">
@@ -160,13 +160,13 @@
                         <div class="card__technologies--container">
                             <p class="title__overlay">Web Technologies:</p>
                             <svg class="card__icons--js">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                             </svg>
                             <svg class="card__icons--scss">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#scss')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#scss')); ?>"></use>
                             </svg>
                             <svg class="card__icons--css">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                             </svg>
                         </div>
 
@@ -181,7 +181,7 @@
 
 
             <div class="card">
-                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/7th-project_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
+                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/7th-project_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
                 <div class="card-block">
                     <h4 class="card-title"> Web App Dashboard:</h4>
                     <div class="card__content-container">
@@ -190,13 +190,13 @@
                         <div class="card__technologies--container">
                             <p class="title__overlay">Web Technologies:</p>
                             <svg class="card__icons--js">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                             </svg>
                             <svg class="card__icons--scss">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#scss')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#scss')); ?>"></use>
                             </svg>
                             <svg class="card__icons--css">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                             </svg>
                         </div>
 
@@ -211,7 +211,7 @@
 
 
             <div class="card">
-                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/6th-project_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
+                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/6th-project_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
                 <div class="card-block">
                     <h4 class="card-title"> Game Show App:</h4>
                     <div class="card__content-container">
@@ -220,11 +220,11 @@
                         <div class="card__technologies--container">
                             <p class="title__overlay">Web Technologies:</p>
                             <svg class="card__icons--js">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                             </svg>
 
                             <svg class="card__icons--css">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                             </svg>
                         </div>
 
@@ -238,7 +238,7 @@
 
 
             <div class="card">
-                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/5th-project_800px.png')); ?>" alt="Photo Gallery Web Project">
+                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/5th-project_800px.png')); ?>" alt="Photo Gallery Web Project">
                 <div class="card-block">
                     <h4 class="card-title"> Photo Gallery App:</h4>
                     <div class="card__content-container">
@@ -248,16 +248,16 @@
                             <p class="title__overlay">Web Technologies:</p>
 
                             <svg class="card__icons--js">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                             </svg>
                             <svg class="card__icons--scss">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#scss')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#scss')); ?>"></use>
                             </svg>
                             <svg class="card__icons--css">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                             </svg>
                             <svg class="card__icons--html5">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#html5')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#html5')); ?>"></use>
                             </svg>
                         </div>
 
@@ -272,7 +272,7 @@
 
 
             <div class="card">
-                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/Zoo-Institute-website_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
+                <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/Zoo-Institute-website_800px.png')); ?>" alt="8th project of Treehouse Techdegree">
                 <div class="card-block">
                     <h4 class="card-title"> Zoo Institute:</h4>
                     <div class="card__content-container">
@@ -282,19 +282,19 @@
                             <p class="title__overlay">Web Technologies:</p>
 
                             <svg class="card__icons--js">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#javascript')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#javascript')); ?>"></use>
                             </svg>
                             <svg class="card__icons--scss">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#scss')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#scss')); ?>"></use>
                             </svg>
                             <svg class="card__icons--css">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#css3')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#css3')); ?>"></use>
                             </svg>
                             <svg class="card__icons--php7">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#php7')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#php7')); ?>"></use>
                             </svg>
                             <svg class="card__icons--wordpress">
-                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('assets/icons/bjs-icon-map.svg#wordpress')); ?>"></use>
+                                <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#wordpress')); ?>"></use>
                             </svg>
                         </div>
 
@@ -322,7 +322,7 @@
 
             <article class="flex__container--reviews">
                 <div class="img__title--container">
-                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/randy.jpg')); ?>" alt="Picture of Randy Layne">
+                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/randy.jpg')); ?>" alt="Picture of Randy Layne">
                     <h4 class="dark-grey-text review__name">Randy Layne</h4>
                     <h6 class="blue-text review__title">Student Success Specialist</h6>
                     <h6 class="blue-text review__company">Team Treehouse</h6>
@@ -338,7 +338,7 @@
 
             <article class="flex__container--reviews">
                 <div class="img__title--container">
-                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/alicia.jpg')); ?>" alt="Picture of Alicia Mendez">
+                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/alicia.jpg')); ?>" alt="Picture of Alicia Mendez">
                     <h4 class="dark-grey-text review__name">Alicia Mendez </h4>
                     <h6 class="blue-text review__title">CEO /Brand President </h6>
                     <h6 class="blue-text review__company">Aletta Bags LLC</h6>
@@ -354,7 +354,7 @@
 
             <article class="flex__container--reviews">
                 <div class="img__title--container">
-                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('assets/img/nestor.png')); ?>" alt="Picture of Nestor Padilla">
+                    <img class="img__person rounded-circle img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/nestor.png')); ?>" alt="Picture of Nestor Padilla">
                     <h4 class="dark-grey-text review__name">Nestor Padilla</h4>
                     <h6 class="blue-text review__title">Senior Developer</h6>
                     <h6 class="blue-text review__company">Pegasus TransTech</h6>
