@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-bj",
+  "version": "1.0.0",
+  "description": "Custom WordPress Theme Digital Portfolio",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

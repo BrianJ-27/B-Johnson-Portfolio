@@ -11,6 +11,6 @@ const nav = new ToggleNav();
 const scroll = new Linkscroll();
 const hdrBar = new HdrBarOnScroll();
 
-if (module.hot) {
-    module.hot.accept()
-}
+// if (module.hot) {
+//     module.hot.accept()
+// }

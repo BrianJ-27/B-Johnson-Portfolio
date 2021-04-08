@@ -3,13 +3,12 @@
 // **************************************
 
 .img__header--container{
-    background: url('../../src/img/BJ-Site-Portfolio-BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     @include flex_me($just:center);
-    width: 100%;
-    height: 100%;
+    height: $header-height;
+    max-height: $header-height;
     position: relative;
 }
 

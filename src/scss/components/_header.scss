@@ -4,8 +4,6 @@
 
 .header__container{
   @include flex_me($vertAlign:center, $just:center, $wrap:wrap);
-  height: $header-height;
-  max-height: $header-height;
   position: relative;
   width: 100%;
 }
