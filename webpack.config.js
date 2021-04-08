@@ -57,10 +57,14 @@ class RunAfterCompile {
 }
 
 let cssConfig = {
-  test: /\.css$/i,
+  test: /\.s[ac]ss$/i,
   use: [
-    "css-loader?url=false",
-    { loader: "postcss-loader", options: { plugins: postCSSPlugins } },
+    // Creates `style` nodes from JS strings
+    "style-loader",
+    // Translates CSS into CommonJS
+    "css-loader",
+    // Compiles Sass to CSS
+    "sass-loader",
   ],
 };
 
