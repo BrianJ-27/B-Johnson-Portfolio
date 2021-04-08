@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="img__banner--container">
-    <div class="img__header--container" style="background-image: url(http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png);">
+    <div class="img__header--container" style="background-image: url('http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png');">
         
         <!--Banner Title Mark-up Starts Here-->
         <div class="header__title--container">
