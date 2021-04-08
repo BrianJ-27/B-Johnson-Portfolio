@@ -39,13 +39,15 @@ Important reminders:
 }
 
 .btn__overlay {
-  background: #024873;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  font-weight: 600;
-  color: #fff;
+  outline: none;
+  border: 3px solid #024873;
+  color: #024873;
   letter-spacing: 0.5px;
-  text-decoration: none;
+  width: 70%;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -414,17 +416,14 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   transition: 0.5s;
-  background-color: #0D0D0D;
 }
 
 main {
   background: #0D0D0D;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 section {
-  margin: 1em auto;
+  margin: 1em 0;
 }
 
 details {
@@ -533,17 +532,6 @@ summary {
 }
 .flex__container--references {
   justify-content: space-around;
-  width: 100%;
-}
-
-.img__banner--container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  max-height: 600px;
-  position: relative;
   width: 100%;
 }
 
@@ -813,10 +801,6 @@ summary {
   font-weight: bolder;
 }
 
-.blog__title {
-  padding-left: 0.4em;
-}
-
 .contact__title {
   text-align: center;
 }
@@ -828,16 +812,6 @@ summary {
 
 .footer__text {
   text-transform: uppercase;
-}
-
-.btn__primary {
-  background: #024873;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 0.5px;
-  text-decoration: none;
 }
 
 .btn__overlay {
@@ -869,6 +843,7 @@ summary {
 }
 
 .img__header--container {
+  background: url("../../src/img/BJ-Site-Portfolio-BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -890,6 +865,7 @@ summary {
 }
 
 .bio__content {
+  background: url("../img/smoke-fumes-transparent-right-.png");
   background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -1115,8 +1091,8 @@ Project Card Images .card-img-top {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  max-height: 80px;
+  height: 600px;
+  max-height: 600px;
   position: relative;
   width: 100%;
 }
@@ -1125,7 +1101,7 @@ Project Card Images .card-img-top {
 .header__bar--container {
   width: 100%;
   height: 80px;
-  background: #0D0D0D;
+  background: rgba(13, 13, 13, 0.6);
   position: fixed;
   top: 0;
   z-index: 5;
@@ -1203,10 +1179,10 @@ div#my-hdr-bar.header__bar--container.onscroll {
 /*-Styles for resume button in header bar-*/
 .btn--resume {
   outline: none;
+  border-color: #fff;
   color: #fff;
   background: transparent;
   border-radius: 20px 0 20px;
-  border: 1px solid #fff;
   transition: background 0.4s ease-in-out;
 }
 .btn--resume:hover {
@@ -1216,8 +1192,6 @@ div#my-hdr-bar.header__bar--container.onscroll {
 
 /*-Styles for resume button link in header bar (a tag nested within btn tag)-*/
 .link--resume {
-  border-radius: 20px 0 20px;
-  border: 1px solid #fff;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
