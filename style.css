@@ -656,7 +656,6 @@ summary {
   transition: color 0.5s;
 }
 .nav__link:active, .nav__link :focus {
-  background: #DBDBDB;
   color: #DBDBDB;
 }
 .nav__link:hover {
@@ -1176,7 +1175,7 @@ div#my-hdr-bar.header__bar--container.onscroll {
 /*-Styles for resume button in header bar-*/
 .btn--resume {
   outline: none;
-  border-color: #fff;
+  border: 1px solid #fff;
   color: #fff;
   background: transparent;
   border-radius: 20px 0 20px;

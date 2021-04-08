@@ -1,1 +1,23 @@
-(()=>{"use strict";new class{constructor(){this.openNav=document.querySelector(".header__btn--menu"),this.closeNav=document.querySelector(".close__btn"),this.events()}events(){this.openNav.addEventListener("click",(()=>{document.getElementById("side__nav").style.left="0"})),this.closeNav.addEventListener("click",(()=>{document.getElementById("side__nav").style.left="-200px"}))}},new class{scrollTo(){document.querySelectorAll(".scroll").forEach((e=>e.onclick=scrollAnchors))}scrollAnchors(e,t=null){const o=e=>Math.floor(e.getBoundingClientRect().top);e.preventDefault();var s=t?t.getAttribute("href"):this.getAttribute("href");const n=document.querySelector(s);if(!n)return;const r=o(n);window.scrollBy({top:r,left:0,behavior:"smooth"});const l=setInterval((function(){const e=window.innerHeight+window.pageYOffset>=document.body.offsetHeight-2;(0===o(n)||e)&&(n.tabIndex="-1",n.focus(),window.history.pushState("","",s),clearInterval(l))}),100)}},new class{constructor(){this.hdrBar=document.getElementById("my-hdr-bar"),this.events()}events(){this.hdrBar.addEventListener("scroll",(()=>{let e=window.scrollY;console.log(e),e>=250?hdrBar.classList.add("onscroll"):hdrBar.classList.remove("onscroll")}))}}})();
+(() => {
+  "use strict";
+  (window.onscroll = () => {
+    let e = window.scrollY;
+    const t = document.getElementById("my-hdr-bar");
+    e >= 250 ? t.classList.add("onscroll") : t.classList.remove("onscroll");
+  })(),
+    new (class {
+      constructor() {
+        (this.openNav = document.querySelector(".header__btn--menu")),
+          (this.closeNav = document.querySelector(".close__btn")),
+          this.events();
+      }
+      events() {
+        this.openNav.addEventListener("click", () => {
+          document.getElementById("side__nav").style.left = "0";
+        }),
+          this.closeNav.addEventListener("click", () => {
+            document.getElementById("side__nav").style.left = "-200px";
+          });
+      }
+    })();
+})();

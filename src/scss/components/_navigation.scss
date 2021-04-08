@@ -71,7 +71,7 @@
     color: $color-link-default;
     transition: color .5s;
     &:active,:focus{
-        background: $color-link-active;
+        
         color: $color-link-active ;
         }
     &:hover{

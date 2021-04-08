@@ -92,7 +92,7 @@ div#my-hdr-bar.header__bar--container.onscroll{
 /*-Styles for resume button in header bar-*/
 .btn--resume{
   outline: none;
-  border-color: $white;
+  border: 1px solid $white;
   color: $white;
   background: transparent;
   border-radius: 20px 0 20px; 
