@@ -3,7 +3,6 @@ export default class ToggleNav {
     /*---Global Variables----*/
         this.openNav = document.querySelector(".header__btn--menu");
         this.closeNav = document.querySelector(".close__btn");
-        this.hdrBar = document.getElementById('my-hdr-bar');
         this.events();
     }
 
