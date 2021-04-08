@@ -1,7 +1,7 @@
 // **************************************
 // JAVASCRIPT SCRIPTS
 // **************************************
-import '../../src/css/style.css'
+// import '../../src/css/style.css'
 // import '../../src/scss/style.scss'
 import ToggleNav from './mainNav'
 import Linkscroll from './scroll'
