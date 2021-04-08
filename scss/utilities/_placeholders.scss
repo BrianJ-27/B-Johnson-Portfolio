@@ -31,13 +31,16 @@
 }
 
 %btn-properties{
-    background: $color-main;
-    border-radius: 5px;
-    margin-bottom: 1em;
+    outline: none;
+    border: 3px solid $color-main;
+    color: $color-main;
+    letter-spacing: .5px;
+    width: 70%;
+    background: transparent;
+    text-transform: uppercase; 
+    font-size: 1em;
     font-weight: 600;
-    color: $white;
-    letter-spacing: 0.5px;
-    text-decoration: none;
+    
 }
 
 %fixed-header-prop{
