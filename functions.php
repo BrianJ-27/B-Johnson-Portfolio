@@ -5,7 +5,7 @@ function portfolio_files(){
     
     // current stylesheets external and within my theme folder
     wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
-
+    wp_enqueue_style('main-site-styles', get_stylesheet_uri());
     //Current scripts for the page
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.4.1.min.js/', NULL, '1.0', true);
     wp_enqueue_script( 'js-file', 'http://localhost:3000/bundled.js', NULL, '1.0', true);

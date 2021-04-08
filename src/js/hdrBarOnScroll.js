@@ -1,5 +1,5 @@
 /*--Header Bar changes color when user starts scrolling--*/
-export  const hdrBarOnScroll = window.onscroll = () => 
+export const hdrBarOnScroll = window.onscroll = () => 
 {
     const hdrBar = document.getElementById('my-hdr-bar');
     let top = window.scrollY;
