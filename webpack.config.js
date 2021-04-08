@@ -15,15 +15,15 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const fse = require("fs-extra");
 
-const postCSSPlugins = [
-  require("postcss-import"),
-  require("postcss-mixins"),
-  require("postcss-simple-vars"),
-  require("postcss-nested"),
-  require("postcss-hexrgba"),
-  require("postcss-color-function"),
-  require("autoprefixer"),
-];
+// const postCSSPlugins = [
+//   require("postcss-import"),
+//   require("postcss-mixins"),
+//   require("postcss-simple-vars"),
+//   require("postcss-nested"),
+//   require("postcss-hexrgba"),
+//   require("postcss-color-function"),
+//   require("autoprefixer"),
+// ];
 
 class RunAfterCompile {
   apply(compiler) {
@@ -56,26 +56,19 @@ class RunAfterCompile {
   }
 }
 
-let cssConfig = {
+let scssConfig = {
   test: /\.s[ac]ss$/i,
-  use: [
-    // Creates `style` nodes from JS strings
-    "style-loader",
-    // Translates CSS into CommonJS
-    "css-loader",
-    // Compiles Sass to CSS
-    "sass-loader",
-  ],
+  use: [  "css-loader", "sass-loader",]
 };
 
 let config = {
   entry: {
-    scripts: "./js/scripts.js",
+    scripts: "./src/js/scripts.js",
   },
   plugins: [],
   module: {
     rules: [
-      cssConfig,
+      scssConfig,
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
@@ -95,7 +88,7 @@ let config = {
 
 if (currentTask == "devFast") {
   config.devtool = "source-map";
-  cssConfig.use.unshift("style-loader");
+  scssConfig.use.unshift("style-loader");
   config.output = {
     filename: "bundled.js",
     publicPath: "http://localhost:3000/",
@@ -133,8 +126,8 @@ if (currentTask == "devFast") {
 }
 
 if (currentTask == "build" || currentTask == "buildWatch") {
-  cssConfig.use.unshift(MiniCssExtractPlugin.loader);
-  postCSSPlugins.push(require("cssnano"));
+  scssConfig.use.unshift(MiniCssExtractPlugin.loader);
+  // postCSSPlugins.push(require("cssnano"));
   config.output = {
     publicPath: "/wp-content/themes/portfolio-bj/",
     filename: "[name].[chunkhash].js",
