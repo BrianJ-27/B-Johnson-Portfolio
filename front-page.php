@@ -149,7 +149,7 @@
         <h2 class="title__secondary">Portfolio</h2>
         <div class="flex__container--cards text-center">
 
-
+        <div class="">
             <div class="card">
                 <img class="card-img-top img-fluid" src="<?php echo esc_url(get_theme_file_uri('src/img/8th-project_800px.png')); ?>" alt="Employee Directory App">
                 <div class="card-block">
@@ -306,7 +306,7 @@
                 </div>
             </div>
 
-
+        </div>
 
 
         </div>
