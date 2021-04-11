@@ -39,7 +39,7 @@
             <figure class="bio__img--wrapper">
                 <img class="img__bio" src="<?php echo esc_url(get_theme_file_uri('src/img/Brian-with-glasses.png')); ?>" alt="Brian With Glasses On">
             </figure>
-            <div class="bio__content" style="background-image: url('http://my-portfolio.local/wp-content/uploads/2021/03/smoke-fumes-transparent-right-.png'); ">
+            <div class="bio__content">
                 <h3 class="title__tertiary">A Little About BJ</h3>
                 <p class="bio__text">Developing and Designing for 3+yrs Freelancing. Laid back and I just enjoy
                     coding. When I don't
