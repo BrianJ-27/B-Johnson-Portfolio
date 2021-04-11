@@ -10,6 +10,7 @@
     height: $header-height;
     max-height: $header-height;
     position: relative;
+    z-index: -2;
 }
 
 .bio__img--wrapper{
@@ -99,8 +100,8 @@
 }
 .smoke__img{
     width: 60px;
-    animation: smokey 2.5s linear infinite;
-    z-index: 1;
+    animation: smokey 5.5s linear infinite;
+    z-index: -1;
 }
 .smoke__img:nth-child(1){
     animation-delay: 2s;
@@ -134,11 +135,6 @@
         transform: translateY(0);
         opacity: 0;
     }
-    30% {
-        
-        opacity: 1;
-    
-    }
     50% {
         
         opacity: 1;
@@ -148,7 +144,7 @@
         opacity: 1;
     }
     100% {
-        transform: translateY(-75vh);
+        transform: translateY(-85vh);
         opacity: 0;
     }
 }

@@ -541,6 +541,7 @@ summary {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
   margin-top: 25px;
 }
 
@@ -550,7 +551,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: -100px;
+  bottom: -250px;
   z-index: 0;
 }
 
@@ -768,6 +769,7 @@ summary {
 
 .review__text {
   color: #878787;
+  flex: 2;
 }
 
 .review__title,
@@ -850,6 +852,7 @@ summary {
   height: 600px;
   max-height: 600px;
   position: relative;
+  z-index: -2;
 }
 
 .bio__img--wrapper {
@@ -950,8 +953,8 @@ summary {
 
 .smoke__img {
   width: 60px;
-  animation: smokey 2.5s linear infinite;
-  z-index: 1;
+  animation: smokey 5.5s linear infinite;
+  z-index: -1;
 }
 
 .smoke__img:nth-child(1) {
@@ -991,9 +994,6 @@ summary {
     transform: translateY(0);
     opacity: 0;
   }
-  30% {
-    opacity: 1;
-  }
   50% {
     opacity: 1;
   }
@@ -1001,7 +1001,7 @@ summary {
     opacity: 1;
   }
   100% {
-    transform: translateY(-75vh);
+    transform: translateY(-85vh);
     opacity: 0;
   }
 }
@@ -1269,8 +1269,22 @@ Project Card Styles .card {
   }
 }
 
+.carousel__container {
+  width: 100%;
+  z-index: 0;
+}
+
+a.image-click-able {
+  display: none !important;
+}
+
+div.fat-hover-wrap.transition-slow {
+  padding: 0 0;
+}
+
 /*-------References Section Class Styles----------*/
 .flex__container--reviews {
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   height: 550px;
@@ -1298,7 +1312,6 @@ Project Card Styles .card {
   top: 0;
   left: 0px;
   background-color: #B8BCBF;
-  border-radius: 0 0 0% 100%;
   z-index: 1;
 }
 

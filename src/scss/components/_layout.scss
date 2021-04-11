@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
     margin-top: 25px;
 }
 
@@ -49,7 +50,7 @@
   width: 100%;
   @include flex_me($just:space-between, $vertAlign:center);
   position: absolute;
-  bottom: -100px;
+  bottom: -250px;
   z-index: 0;
 }
 

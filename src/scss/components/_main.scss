@@ -50,11 +50,25 @@ Project Card Styles
   }
 }
 
+.carousel__container {
+  width: 100%; 
+  z-index: 0;
+}
+
+a.image-click-able{
+  display: none !important;
+}
+
+div.fat-hover-wrap.transition-slow{
+  padding: 0 0;
+}
 
 
 /*-------References Section Class Styles----------*/
 
 .flex__container--reviews{
+    flex-direction: column;
+  
   position: relative;
   overflow: hidden;
   height: 550px;
@@ -78,7 +92,6 @@ Project Card Styles
     top: 0;
     left: 0px;
     background-color: #B8BCBF;
-    border-radius: 0 0 0% 100%;
     z-index: 1;
 } 
 
