@@ -5,7 +5,7 @@
 
         <!--Banner Title Mark-up Starts Here-->
         <div class="header__title--container">
-            <h1 class="header__title">Brian Johnson!</h1>
+            <h1 class="header__title">Brian Johnson</h1>
             <h3 class="sub__title">Front-End Developer</h3>
             <hr class="title__underline">
         </div>

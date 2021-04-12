@@ -17678,6 +17678,39 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/icons/Adobe-XD-Brand.svg":
+/*!**************************************!*\
+  !*** ./src/icons/Adobe-XD-Brand.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "ce26c66735b3fc854786.svg";
+
+/***/ }),
+
+/***/ "./src/img/5th-project-resized.png":
+/*!*****************************************!*\
+  !*** ./src/img/5th-project-resized.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "800fd16c0e5e0c593375.png";
+
+/***/ }),
+
+/***/ "./src/img/alicia.jpg":
+/*!****************************!*\
+  !*** ./src/img/alicia.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "d2f9fe3105f35b57625a.jpg";
+
+/***/ }),
+
 /***/ "./src/js/hdrBarOnScroll.js":
 /*!**********************************!*\
   !*** ./src/js/hdrBarOnScroll.js ***!
@@ -17875,6 +17908,26 @@ function smoothScroll() {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -17887,11 +17940,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./src/css/style.css");
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
-/* harmony import */ var _mainNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mainNav */ "./src/js/mainNav.js");
-/* harmony import */ var _hdrBarOnScroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hdrBarOnScroll */ "./src/js/hdrBarOnScroll.js");
-/* harmony import */ var _smoothScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./smoothScroll */ "./src/js/smoothScroll.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_5th_project_resized_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/5th-project-resized.png */ "./src/img/5th-project-resized.png");
+/* harmony import */ var _img_alicia_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/alicia.jpg */ "./src/img/alicia.jpg");
+/* harmony import */ var _icons_Adobe_XD_Brand_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../icons/Adobe-XD-Brand.svg */ "./src/icons/Adobe-XD-Brand.svg");
+/* harmony import */ var _mainNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mainNav */ "./src/js/mainNav.js");
+/* harmony import */ var _hdrBarOnScroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hdrBarOnScroll */ "./src/js/hdrBarOnScroll.js");
+/* harmony import */ var _smoothScroll__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./smoothScroll */ "./src/js/smoothScroll.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_8__);
 // **************************************
 // JAVASCRIPT SCRIPTS
 // **************************************
@@ -17902,9 +17958,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const hdrBar = (0,_hdrBarOnScroll__WEBPACK_IMPORTED_MODULE_3__.coolHdrColor)();
-const smooth = (0,_smoothScroll__WEBPACK_IMPORTED_MODULE_4__.smoothScroll)();
-const nav = new _mainNav__WEBPACK_IMPORTED_MODULE_2__.default();
+
+
+
+
+const hdrBar = (0,_hdrBarOnScroll__WEBPACK_IMPORTED_MODULE_6__.coolHdrColor)();
+const smooth = (0,_smoothScroll__WEBPACK_IMPORTED_MODULE_7__.smoothScroll)();
+const nav = new _mainNav__WEBPACK_IMPORTED_MODULE_5__.default();
 
 
 const urls = [
@@ -17940,9 +18000,9 @@ for (let i = 0; i < urls.length; i++){
         <a class="btn__overlay" href="${github}" target="_blank">Github</a>
     </div>
     `;
-    const test = ref.append(html);
+    const test = ref.appendChild(html);
 
-   console.log(ref);
+   console.log(test);
 }
     
 

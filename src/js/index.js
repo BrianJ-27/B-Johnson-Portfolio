@@ -3,6 +3,10 @@
 // **************************************
 import css from '../css/style.css'
 import scss from  '../scss/style.scss'
+import pngImgs from '../img/5th-project-resized.png'
+import jpgImgs from '../img/alicia.jpg'
+import svgsIcons from '../icons/Adobe-XD-Brand.svg'
+
 import ToggleNav from './mainNav'
 import { coolHdrColor }  from './hdrBarOnScroll'
 import { smoothScroll } from './smoothScroll'
@@ -35,20 +39,19 @@ const urls = [
         projectGithub: 'https://github.com/BrianJ-27/Fictional-Univ'
     }
 ]
-
+const ref = document.querySelector('.fat-hover-inner');
+let html = '';
 for (let i = 0; i < urls.length; i++){
-    const ref = document.querySelector('.fat-hover-inner');
     let live = urls[i].projectLive;
     let github  = urls[i].projectGithub;
-    const html = `
+     html += `
     <div class="card__btn--container">
         <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
         <a class="btn__overlay" href="${github}" target="_blank">Github</a>
     </div>
     `;
-    const test = ref.appendChild(html);
-
-   console.log(test);
 }
+
+ref.innerHTML = ref.innerHTML + html;
     
 
