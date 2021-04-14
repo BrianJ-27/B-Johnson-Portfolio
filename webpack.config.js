@@ -1,9 +1,9 @@
 /*
   SUPER IMPORTANT: If you'd like to adapt this
-  config to work with your own custom folder structure and names
-  be sure to adjust the publicPath value on line #116. You do NOT
+  config to work with your own custom theme folder structure and names,
+  be sure to adjust the publicPath value on line #125. You do NOT
   need to update any of the other publicPath settings in this file,
-  only the one on line #116.
+  only the one on line #125.
   Also if you want to incorporate PostCSS into this project, uncomment 
   line 16 & line 22
 */

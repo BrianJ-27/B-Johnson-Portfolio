@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <div class="img__banner--container">
-    <div class="img__header--container" style="background-image: url('http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png');">
-
+        <video class="fullscreen-video" loop="true" autoplay="true"  src="<?php echo esc_url(get_theme_file_uri('src/vid/smoke-vid.mov')); ?>"></video>
+    
         <!--Banner Title Mark-up Starts Here-->
         <div class="header__title--container">
             <h1 class="header__title">Brian Johnson</h1>
@@ -26,7 +26,8 @@
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
         </div>
-    </div>
+      
+    
     <!--Header Cool Smoke Effect Mark-up Ends Here-->
 </div>
 
