@@ -2,15 +2,23 @@
 // IMAGE STYLES
 // **************************************
 
-.img__header--container{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+// .img__header--container{
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     @include flex_me($just:center);
+//     height: $header-height;
+//     max-height: $header-height;
+//     position: relative;
+//     z-index: -2;
+// }
+
+.img__banner--container{
+    height: 400px;
     @include flex_me($just:center);
-    height: $header-height;
-    max-height: $header-height;
-    position: relative;
-    z-index: -2;
+    @include mq ('md'){
+        height: 100%;
+    }
 }
 
 .bio__img--wrapper{

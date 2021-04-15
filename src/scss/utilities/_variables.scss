@@ -28,10 +28,10 @@ $bean: #3D0C02;
 $bubblegum: #EEC1BE;
 
 /*-----Project Color Variables-----*/
-$calm-blue: #024873; 
+$calm-blue: #1261A6; 
 $sophisticated-teal: #025E73; 
-$mellow-skyblue: #80B4BF;
-$serene-midnight: #0D0D0D; 
+$mellow-skyblue: #29A7D9;
+$serene-midnight: #041E40; 
 $relaxed-silver: #B8BCBF; 
 $white: #fff;
 
@@ -86,9 +86,9 @@ $header-height: 600px;
 $footer-height: 100px;
 
 //Font Stacks 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
-$font-stack-bangers: 'Bangers', sans-serif;
-$font-stack-montserrat: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Raleway&display=swap');
+$font-stack-bangers: 'Lato', sans-serif;
+$font-stack-montserrat: 'Raleway', sans-serif;
 $base-font-size: 16px;
 
 //border radius

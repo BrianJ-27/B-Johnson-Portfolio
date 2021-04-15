@@ -1,23 +1,29 @@
 <?php get_header(); ?>
 
 <div class="img__banner--container">
-        <video class="fullscreen-video" loop="true" autoplay="true"  src="<?php echo esc_url(get_theme_file_uri('src/vid/smoke-vid.mov')); ?>"></video>
+    <div class="bg__video--container">
+        <video class="fullscreen-video" loop="true" autoplay src="<?php echo esc_url(get_theme_file_uri('src/vid/smoke-vid.mov')); ?>"></video>
+    </div>
+        
     
-        <!--Banner Title Mark-up Starts Here-->
-        <div class="header__title--container">
+        <!-- Banner Title Mark-up Starts Here-->
+        <div class="header__title--container blur">
             <h1 class="header__title">Brian Johnson</h1>
-            <h3 class="sub__title">Front-End Developer</h3>
+            <h3 class="sub__title">Your Front End Developer</h3>
+            
             <hr class="title__underline">
+            <p class="tagline">The Desire to Learn Always Burns</p>
+            <a href=""></a>
         </div>
 
         <!--Banner Brian's Face Mark-up Starts Here-->
-        <div class="my__face--container">
+        <!-- <div class="my__face--container">
             <img class="my__face" src="<?php echo esc_url(get_theme_file_uri('src/img/BJ-Site-Portfolio-face.png')); ?>" alt="My Face">
-        </div>
+        </div> -->
         <!--Header Brian's Face Mark-up Ends Here-->
 
         <!--Header Cool Smoke Effect Mark-up Starts Here-->
-        <div class="smoke__container">
+        <!-- <div class="smoke__container">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
@@ -25,7 +31,7 @@
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
             <img class="smoke__img" src="<?php echo esc_url(get_theme_file_uri('src/img/smoke-fumes-transparent-1-.png')); ?>" alt="Cool Smoke Shape 1 ">
-        </div>
+        </div> -->
       
     
     <!--Header Cool Smoke Effect Mark-up Ends Here-->

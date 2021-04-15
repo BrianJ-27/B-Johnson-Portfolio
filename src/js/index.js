@@ -16,6 +16,10 @@ const hdrBar = coolHdrColor();
 const smooth = smoothScroll();
 const nav = new ToggleNav();
 
+jQuery(window).load(function() {
+    jQuery("body").removeClass("preload");
+});
+
 
 const urls = [
     {

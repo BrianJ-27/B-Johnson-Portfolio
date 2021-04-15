@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> id="main__content" class="website__container">
+<body <?php body_class(); ?> id="main__content" class="website__container preload">
     <!--Navigation Menu hidden to the right until user clicks the menu-->
     <nav id="side__nav" class="nav__sidebar--container">
         <header class="nav__header--container">

@@ -13,20 +13,24 @@
 .header__bar--container{
   width: 100%;
   height: 80px;
-  background: rgba($color-bg, .6);
+  background: $color-secondary;
   position: fixed;
   top: 0;
   z-index: 5;
   @include flex_me($just:space-between, $vertAlign:center);
-  box-shadow: 0 8px 7px -3px #dbdbdb;
   transition: background .6s ease-out;
 }
 
 /*---Added styles for when user scrolls down about 520px from the top of page --*/
 div#my-hdr-bar.header__bar--container.onscroll{
-  background: $color-main;
+  background: $white;
   transition: background .6s ease;
 }
+div#home__btn--menu.menu__btn--burger.onscroll-text{
+  color: $color-main;
+  transition: background .6s ease;
+}
+
 
 /*---Container That holds the hamburger menu--*/
 .header__btn--menu{
@@ -40,19 +44,23 @@ div#my-hdr-bar.header__bar--container.onscroll{
   &:after{
       content: "Menu";
       font-size: 1.2em;
-      color: white;
-      border-bottom: 2px dotted #fff;
+      color: $color-bg-dark;
+      border-bottom: 2px dotted $color-bg-dark;
       position: relative;
     left: 100%;
     top: 25%;
  }
 }
 
+:root{
+  --pseudo-backgroundcolor: $white;
+}
+
 /*-Styles to start Creating the hamburger lines for the menu-*/
 .menu__btn--burger{
   width: 20px;
   height: 3px;
-  background: $white;
+  background: $color-bg-dark;
   border-radius: 5px;
   transition: all .5s ease-in-out;
   position: absolute;
@@ -65,7 +73,7 @@ div#my-hdr-bar.header__bar--container.onscroll{
   content: '';
   width: 25px;
   height: 3px;
-  background: $white;
+  background: $color-bg-dark;
   border-radius: 5px;
   position: absolute;
   transition: all .5s ease-in-out;
@@ -93,8 +101,8 @@ div#my-hdr-bar.header__bar--container.onscroll{
 /*-Styles for resume button in header bar-*/
 .btn--resume{
   outline: none;
-  border: 1px solid $white;
-  color: $white;
+  border: 1px solid $color-bg-dark;
+  color: $color-bg-dark;
   background: transparent;
   border-radius: 20px 0 20px; 
   transition: background .4s ease-in-out;
@@ -107,7 +115,7 @@ div#my-hdr-bar.header__bar--container.onscroll{
 .link--resume{
   text-decoration: none;
   text-transform: uppercase;
-  color: $white;
+  color: $color-bg-dark;
   transition: color .4s ease-in-out;
   &:hover{
     color: $color-main;
@@ -117,21 +125,29 @@ div#my-hdr-bar.header__bar--container.onscroll{
 
 .header__title--container{
   position: absolute;
-  top: 20%;
+  margin-top: 10em;
   @include mq ('md'){
-    top: 15%;
+    margin-top: 12em;
+  }
+  @include mq ('lg'){
+    margin-top: 16em;
   }
 }
 
 .header__title{
-  font-size: 3em;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 200;
   @include mq ('md'){
-    font-size: 3.5em;
+    font-size: 4.2em;
+  }
+  @include mq ('lg'){
+    font-size: 5.5em;
   }
 }
 
 .sub__title{
-  font-size: 1.7em;
+  font-size: 1.4em;
   text-align: center;
   @include mq ('md'){
     font-size: 2em;

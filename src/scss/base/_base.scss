@@ -33,7 +33,7 @@ body{
 }
 
 main{
-    background: $color-bg;
+    background: linear-gradient(to right, #0f0c29, $color-bg, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 section{
