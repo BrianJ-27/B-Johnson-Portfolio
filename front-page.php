@@ -13,7 +13,7 @@
             
             <hr class="title__underline">
             <p class="tagline">The Desire to Learn Always Burns</p>
-            <a href=""></a>
+            <a class="btn__overlay" href="<?php echo esc_url(site_url('#projects')); ?>"> View My Work  </a>
         </div>
 
         <!--Banner Brian's Face Mark-up Starts Here-->

@@ -33,12 +33,11 @@ body{
 }
 
 main{
-    background: linear-gradient(to right, #0f0c29, $color-bg, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #0f0c29, $color-bg, #0f0c29); 
 }
 
-section{
-    margin: 1em 0;
-}
+
 
 details {
     color: $white;

@@ -6,88 +6,34 @@
   @include flex_me($vertAlign:center, $just:center, $wrap:wrap);
   position: relative;
   width: 100%;
-
 }
 
 /*---Container is the header bar that holds the nav menu & resume container --*/
 .header__bar--container{
   width: 100%;
   height: 80px;
-  background: $color-secondary;
+  background: transparent;
   position: fixed;
   top: 0;
   z-index: 5;
   @include flex_me($just:space-between, $vertAlign:center);
   transition: background .6s ease-out;
+  border-bottom: 2px inset $color-main-darkest;
+  box-shadow: 0 8px 7px -3px $white;
 }
 
-/*---Added styles for when user scrolls down about 520px from the top of page --*/
-div#my-hdr-bar.header__bar--container.onscroll{
-  background: $white;
-  transition: background .6s ease;
-}
-div#home__btn--menu.menu__btn--burger.onscroll-text{
-  color: $color-main;
-  transition: background .6s ease;
-}
-
-
-/*---Container That holds the hamburger menu--*/
 .header__btn--menu{
-  width: 60px;
-  height: 60px;
+  margin-left: 1.5em;
   cursor: pointer;
-  transition: all .5s ease-in;
-  position: relative;
-  // border: 3px solid $white; // Optional Border styles
-  // border-radius: 100% 0% 55% 45% / 56% 0% 100% 44%; // Optional Border styles
-  &:after{
-      content: "Menu";
-      font-size: 1.2em;
-      color: $color-bg-dark;
-      border-bottom: 2px dotted $color-bg-dark;
-      position: relative;
-    left: 100%;
-    top: 25%;
- }
-}
-
-:root{
-  --pseudo-backgroundcolor: $white;
 }
 
 /*-Styles to start Creating the hamburger lines for the menu-*/
-.menu__btn--burger{
-  width: 20px;
-  height: 3px;
-  background: $color-bg-dark;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+div.menu__bar {
+  width: 35px;
+  height: 4px;
+  background-color: $white;
+  margin: 6px 0;
 }
-
-.menu__btn--burger::before,
-.menu__btn--burger::after{
-  content: '';
-  width: 25px;
-  height: 3px;
-  background: $color-bg-dark;
-  border-radius: 5px;
-  position: absolute;
-  transition: all .5s ease-in-out;
-}
-
-.menu__btn--burger:before{
-  transform: translateY(-8px);
-
-}
-
-.menu__btn--burger:after{
-  transform: translateY(8px);
-}
-/*-The end of the styles Creating the hamburger lines for the menu-*/
 
 
 /*-Styles for resume button container in header bar-*/
@@ -95,35 +41,36 @@ div#home__btn--menu.menu__btn--burger.onscroll-text{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 1.5em;
-}
-
-/*-Styles for resume button in header bar-*/
-.btn--resume{
+  margin-right: 1.5em;
   outline: none;
-  border: 1px solid $color-bg-dark;
-  color: $color-bg-dark;
-  background: transparent;
-  border-radius: 20px 0 20px; 
+  border: 1px solid $white;
+  color: $white;
+  border-radius: 20px 10px 20px;
   transition: background .4s ease-in-out;
   &:hover{
     background: $white;
-    color: $color-main;
+    border-radius: 20px 10px 20px;
+    color: $color-accent
   }
 }
+
 /*-Styles for resume button link in header bar (a tag nested within btn tag)-*/
 .link--resume{
+  font-family: 'Lato';
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  color: $color-bg-dark;
+  color: $white;
   transition: color .4s ease-in-out;
+  letter-spacing: 1px;
   &:hover{
-    color: $color-main;
+    color: $color-accent;
     text-decoration: none;
   }
 }
 
 .header__title--container{
+  @include flex_me($vertAlign:center, $dir:column);
   position: absolute;
   margin-top: 10em;
   @include mq ('md'){
@@ -134,27 +81,45 @@ div#home__btn--menu.menu__btn--burger.onscroll-text{
   }
 }
 
-.header__title{
-  text-transform: uppercase;
-  font-size: 2.5em;
-  font-weight: 200;
-  @include mq ('md'){
-    font-size: 4.2em;
-  }
-  @include mq ('lg'){
-    font-size: 5.5em;
+
+/*---styles for header bar on scroll --*/
+div#my-hdr-bar.header__bar--container.onscroll{
+  background: $white;
+  transition: background .6s ease;
+  box-shadow: 0 8px 7px -3px $color-main-dark;
+}
+
+/*---smooth transition style for hamburger menu, resume container and resume link on scroll --*/
+a#resume__mobile.link--resume.onscroll-text,
+div.header__btn--resume.onscroll-text,
+div.menu__bar.onscroll-text{
+  transition: background .6s ease;
+}
+
+
+a#resume__mobile.link--resume.onscroll-text,
+div.header__btn--resume.onscroll-text{
+  color: $color-main-darkest;
+}
+
+/*---styles for resume border outline on scroll --*/
+div.header__btn--resume.onscroll-text{
+  border: 1px solid $color-main-darkest;
+  border-radius: 20px 10px 20px;
+  &:hover{
+    background-color: $color-main-darkest;
   }
 }
 
-.sub__title{
-  font-size: 1.4em;
-  text-align: center;
-  @include mq ('md'){
-    font-size: 2em;
+/*---styles for when user hovers over resume on scroll link---*/
+a#resume__mobile.link--resume.onscroll-text{
+  &:hover{
+    color: $white;
+    text-decoration: none;
   }
 }
 
-.header__title,
-.sub__title{
-  color: $white;
+/*---styles for hamburger menu on scroll----*/
+div.menu__bar.onscroll-text{
+  background-color: $color-main-darkest;
 }

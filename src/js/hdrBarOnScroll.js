@@ -3,19 +3,23 @@
 export const coolHdrColor = window.onscroll = () => {
   let top = window.scrollY;
   const hdrBar = document.getElementById('my-hdr-bar');
-  const hdrBarText = document.querySelector('.menu__btn--burger');
-  const hdrBarTextPsuedo = document.querySelector(':root');
+  const menuBars = document.querySelectorAll('.menu__bar');
   const resume = document.getElementById('resume__mobile');
-  if(top >= 250){
+  const resumeBdr = document.querySelector('.header__btn--resume');
+  if(top >= 200){
+    for(let i = 0; i < menuBars.length; i++){
+      menuBars[i].classList.add('onscroll-text');
+    }
     hdrBar.classList.add('onscroll');
-    hdrBarText.classList.add('onscroll-text');
-    hdrBarTextPsuedo.classList.add('onscroll-text');
     resume.classList.add('onscroll-text');
+    resumeBdr.classList.add('onscroll-text');
   } else {
     hdrBar.classList.remove('onscroll');
-    hdrBarText.classList.remove('onscroll-text');
-    hdrBarTextPsuedo.classList.remove('onscroll-text');
     resume.classList.remove('onscroll-text');
+    resumeBdr.classList.remove('onscroll-text');
+    for(let i = 0; i < menuBars.length; i++){
+      menuBars[i].classList.remove('onscroll-text');
+    }
   }
 }
 

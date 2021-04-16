@@ -23,12 +23,7 @@
   &--cards{
     @include flex_me($wrap:wrap, $just:center, $vertAlign:center);
   }
- &--bio {
-   @include mq('md'){
-     margin: 1em;
-   }
- }
-
+ 
  &--references {
    justify-content: space-around;
    width: 100%;
