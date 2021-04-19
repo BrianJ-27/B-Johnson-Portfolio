@@ -10,6 +10,7 @@ function portfolio_files(){
     //Current scripts for the page
     // wp_enqueue_script( 'js-file', get_template_directory_uri() . './dist/main.js', NULL, '1.0', true);
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.4.1.min.js/', NULL, '1.0', true);
+    wp_enqueue_script('scrollReveal', '//unpkg.com/scrollreveal', NULL, '1.0', false);
   
     wp_enqueue_script( 'js-file', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
 

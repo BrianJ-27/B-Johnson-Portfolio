@@ -43,19 +43,40 @@ const urls = [
         projectGithub: 'https://github.com/BrianJ-27/Fictional-Univ'
     }
 ]
-const ref = document.querySelector('.fat-hover-inner');
-let html = '';
-for (let i = 0; i < urls.length; i++){
-    let live = urls[i].projectLive;
-    let github  = urls[i].projectGithub;
-     html += `
-    <div class="card__btn--container">
-        <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
-        <a class="btn__overlay" href="${github}" target="_blank">Github</a>
-    </div>
-    `;
-}
 
-ref.innerHTML = ref.innerHTML + html;
+
+let html ="";
+const parentEl = document.querySelectorAll('.fat-hover-inner .category');
+console.log(parentEl);
+const div = document.createElement('div');
+div.classList.add('card__btn--container');
+urls.forEach( (url, ) => {
     
+    let live = url.projectLive
+    let github = url.projectGithub
+    html = `
+        <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
+        <a class="btn__overlay" href="${github}" target="_blank">Github</a> 
+    `;
+    div.innerHTML = html
+    console.log(div);
+    parentEl.forEach(el, ()=> el.appendChild(div));
+});
+
+
+
+
+// let html = '';
+// for (let i = 0; i < urls.length; i++){
+//     let live = urls[i].projectLive;
+//     let github  = urls[i].projectGithub;
+//      html += `
+//     <div class="card__btn--container">
+//         <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
+//         <a class="btn__overlay" href="${github}" target="_blank">Github</a>
+//     </div>
+//     `;
+// }
+
+// ref.innerHTML = ref.innerHTML + html;  
 

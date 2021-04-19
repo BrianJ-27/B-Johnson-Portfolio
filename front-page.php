@@ -58,7 +58,7 @@
     </section>
     <!--About Me Section Content Ends Here-->
     <!--Skill Section Content Starts Here-->
-    <section id="skills" class="flex__container">
+    <section id="skills" class="flex__container" style="background: linear-gradient(to right, rgba(15,12,41,0.8), rgba(4,30,64, 0.8), rgba(15,12,41,0.8)), url('<?php echo esc_url(get_theme_file_uri('src/img/comp-BG.jpg')); ?>');">
         <h2 class="title__secondary">My Abilities</h2>
         <div class="flex__container--skills">
 

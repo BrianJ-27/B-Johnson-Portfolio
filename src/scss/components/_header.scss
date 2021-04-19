@@ -73,6 +73,7 @@ div.menu__bar {
   @include flex_me($vertAlign:center, $dir:column);
   position: absolute;
   margin-top: 10em;
+  width: 100%;
   @include mq ('md'){
     margin-top: 12em;
   }
@@ -85,7 +86,7 @@ div.menu__bar {
 /*---styles for header bar on scroll --*/
 div#my-hdr-bar.header__bar--container.onscroll{
   background: $white;
-  transition: background .6s ease;
+  transition: background .8s ease;
   box-shadow: 0 8px 7px -3px $color-main-dark;
 }
 
