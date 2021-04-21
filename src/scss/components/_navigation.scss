@@ -24,6 +24,7 @@
     background: $white;
     @include flex_me($vertAlign:center, $dir: column);
     line-height: 1.1;
+    height: 60px;
   }
 
 .nav__title{
@@ -32,6 +33,7 @@
     font-weight: bolder;
     margin-bottom: 10px;
     font-size: .9em;
+    height: 100%;
     @include mq('lg'){
         font-size: .85em;
     }

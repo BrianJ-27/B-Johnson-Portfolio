@@ -20,7 +20,7 @@
   @include text-prop($size: 1.5em, $f-weight: 500, $color: $color-accent);
   @extend %text-modules;
   text-align: center;
-  margin: 1.5em 0;
+  padding: 1.5em 0;
   &::after {
     content: "\003e";
     @extend %psuedo-sec-title;
@@ -40,11 +40,13 @@
 }
 
 #about__me > .title__secondary,
+#references > .title__secondary,
 .bio__text {
   color: $color-main-darkest;
 }
 
-#about__me > .title__secondary {
+#about__me > .title__secondary,
+#references > .title__secondary {
   &::after {
     content: "\003e";
     @extend %psuedo-sec-title-1;

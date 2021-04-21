@@ -17,9 +17,7 @@
   top: 0;
   z-index: 5;
   @include flex_me($just:space-between, $vertAlign:center);
-  transition: background .6s ease-out;
-  border-bottom: 2px inset $color-main-darkest;
-  box-shadow: 0 8px 7px -3px $white;
+  transition: background .6s ease-in;
 }
 
 .header__btn--menu{
@@ -46,7 +44,7 @@ div.menu__bar {
   border: 1px solid $white;
   color: $white;
   border-radius: 20px 10px 20px;
-  transition: background .4s ease-in-out;
+  transition: all .4s ease-in-out;
   &:hover{
     background: $white;
     border-radius: 20px 10px 20px;
@@ -61,8 +59,8 @@ div.menu__bar {
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
-  transition: color .4s ease-in-out;
   letter-spacing: 1px;
+  transition: all .4s ease-in-out;
   &:hover{
     color: $color-accent;
     text-decoration: none;
@@ -86,7 +84,7 @@ div.menu__bar {
 /*---styles for header bar on scroll --*/
 div#my-hdr-bar.header__bar--container.onscroll{
   background: $white;
-  transition: background .8s ease;
+  transition: all .6s ease-out;
   box-shadow: 0 8px 7px -3px $color-main-dark;
 }
 
