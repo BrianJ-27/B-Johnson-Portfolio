@@ -84,7 +84,7 @@
             </div>
             
             <div class="header__btn--resume">
-                <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf"><?php _e('resume'); ?></a>
+                <a id="resume__mobile" class="link--resume btn__overlay" href="Brian_Blue_Resume.pdf"><?php _e('resume'); ?></a>
             </div>
         </div>
         <!--Header Bar Mark-up Ends Here-->

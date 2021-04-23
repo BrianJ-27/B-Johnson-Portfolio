@@ -22,20 +22,25 @@
 // Navigation Header Where logo and close btn are located
   .nav__header--container{
     background: $white;
-    @include flex_me($vertAlign:center, $dir: column);
+   
     line-height: 1.1;
     height: 60px;
   }
 
 .nav__title{
+    @include flex_me($vertAlign:flex-end, $just:center);
     color: $color-main-darkest;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 400;
     margin-bottom: 10px;
-    font-size: .9em;
+    font-size: 1em;
     height: 100%;
+    text-align: center;
+    line-height: 1.3;
+    padding: 0 1em .5em 1em;
     @include mq('lg'){
-        font-size: .85em;
+        font-size: 1em;
+
     }
 }
 .close__btn{

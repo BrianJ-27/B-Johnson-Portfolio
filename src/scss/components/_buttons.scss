@@ -7,7 +7,6 @@
     text-align: center;
     @extend %btn-properties;
     transition: background .4s ease-in;
-    margin-bottom: 10px;
     &:hover{
         background: $color-main;
         text-decoration: none;
@@ -18,14 +17,20 @@
     }
 }
 
-.btn__overlay:nth-child(1){
+.btn__overlay:nth-child(1) {
     @include mq ('md'){
-        margin-left: .5em;
+        width: 100%;
     }  
 }
-.btn__overlay:nth-child(2){
+
+.btn__title{
+    margin-top: 1em;
+    width: 80%;
     @include mq ('md'){
-        margin-right: .5em;
-    } 
+        width: 35%;
+    }
+    @include mq ('lg'){
+        width: 30%;
+    }
 }
 

@@ -40,14 +40,8 @@ div.menu__bar {
   justify-content: flex-end;
   align-items: center;
   margin-right: 1.5em;
-  outline: none;
-  border: 1px solid $white;
-  color: $white;
-  border-radius: 20px 10px 20px;
   transition: all .4s ease-in-out;
   &:hover{
-    background: $white;
-    border-radius: 20px 10px 20px;
     color: $color-accent
   }
 }
@@ -55,16 +49,11 @@ div.menu__bar {
 /*-Styles for resume button link in header bar (a tag nested within btn tag)-*/
 .link--resume{
   font-family: 'Lato';
-  font-weight: 600;
+  font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
   letter-spacing: 1px;
-  transition: all .4s ease-in-out;
-  &:hover{
-    color: $color-accent;
-    text-decoration: none;
-  }
 }
 
 .header__title--container{
@@ -73,10 +62,12 @@ div.menu__bar {
   margin-top: 10em;
   width: 100%;
   @include mq ('md'){
-    margin-top: 12em;
+    margin-top: 7em;
+    width: 75%;
   }
   @include mq ('lg'){
-    margin-top: 16em;
+    margin-top: 12em;
+    width: 70%;
   }
 }
 
@@ -103,8 +94,8 @@ div.header__btn--resume.onscroll-text{
 
 /*---styles for resume border outline on scroll --*/
 div.header__btn--resume.onscroll-text{
-  border: 1px solid $color-main-darkest;
-  border-radius: 20px 10px 20px;
+  border: 2px solid $color-main-darkest;
+  border-radius: 10px;
   &:hover{
     background-color: $color-main-darkest;
   }

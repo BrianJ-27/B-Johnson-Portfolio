@@ -238,9 +238,10 @@
 
 // Styling for social media icons
 .footer__icons{
-    width: 100px;
-    height: 100px;
-    padding: 1em;
+    fill: $white;
+    @include mq ('md'){
+        padding: 1em;
+    }
 }
 
 

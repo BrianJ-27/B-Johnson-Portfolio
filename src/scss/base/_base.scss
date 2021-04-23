@@ -27,7 +27,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 }
 
 body{
-    font-family: $font-stack-montserrat;
+    font-family: $font-stack-raleway;
     transition: .5s;
    
 }
@@ -74,7 +74,7 @@ hr{
 }
 
 p{
-    font-family: $font-stack-montserrat;
+    font-family: $font-stack-raleway;
     text-align: left; 
     margin: 0;
     color: $white;
@@ -99,7 +99,7 @@ h3,
 h4,
 h6,
 summary{
-    font-family: $font-stack-bangers;
+    font-family: $font-stack-lato;
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
