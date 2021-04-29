@@ -57,12 +57,12 @@
                 </svg>
                 <a class="nav__link nav__icon6 scroll" href="<?php echo esc_url(site_url('#contact')); ?>"><?php _e('contact me'); ?></a>
             </li>
-            <li class="nav__item">
+            <!-- <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#blog')); ?>"></use>
                 </svg>
                 <a class="nav__link nav__icon6 scroll" href="<?php echo esc_url(site_url('/blog')); ?>"><?php _e('bj\'s blog'); ?></a>
-            </li>
+            </li> -->
             <!-- <li class="nav__item">
                 <button class="btn--resume">
                     <a id="resume__mobile" class="link--resume" href="Brian_Blue_Resume.pdf">resume
@@ -84,7 +84,7 @@
             </div>
             
             <div class="header__btn--resume">
-                <a id="resume__mobile" class="link--resume btn__overlay" href="Brian_Blue_Resume.pdf"><?php _e('resume'); ?></a>
+                <a id="resume__mobile" class="link--resume btn__overlay" href="<?php echo 'http://digitalportfolio.local/wp-content/uploads/2021/04/Brian-Web-Developer-Resume.pdf'; ?>"><?php _e('resume'); ?></a>
             </div>
         </div>
         <!--Header Bar Mark-up Ends Here-->

@@ -3,7 +3,8 @@
 // **************************************
 
 /*--------BASE ELEMENT STYLES--------*/
-*{
+* {
+    // testing styles
     box-sizing: border-box;
     // background: #000 !important;
     // color: #0f0 !important;
@@ -38,17 +39,6 @@ main{
 }
 
 
-
-details {
-    color: $white;
-    transition: .7s;
-    font-size: 1.7em;
-}
-
-::marker{
-  display:none !important;
-}
-
 figure {
     background-color: transparent;
 }
@@ -66,14 +56,13 @@ svg{
     }
 }
 
-
-hr{
+hr {
     height: 3px;
-    width: 30%;
+    width: 20%;
     border-top: 2px solid $white    ;
 }
 
-p{
+p {
     font-family: $font-stack-raleway;
     text-align: left; 
     margin: 0;
@@ -81,12 +70,12 @@ p{
     padding: 0 1.5em;
 }
 
-a{
+a {
     display: inline-block;
     padding: .6em;   
 }
 
-footer{
+footer {
     height: $footer-height;
     background: $color-bg-darkest;
     color: $color-text-light;
@@ -97,12 +86,11 @@ h1,
 h2,
 h3,
 h4,
-h6,
-summary{
+h6 {
     font-family: $font-stack-lato;
     margin: 0;
     padding: 0;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
 }
 
 

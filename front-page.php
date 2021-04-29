@@ -24,10 +24,10 @@
         <h2 class="title__secondary"> The Journey </h2>
         <div class="flex__container--bio">
 
-            <figure class="bio__img--wrapper">
+            <figure class="bio__img--wrapper" data-aos="fade-right" data-aos-duration="2000">
                 <img class="img__bio" src="<?php echo esc_url(get_theme_file_uri('src/img/Brian-with-glasses.png')); ?>" alt="Brian With Glasses On">
             </figure>
-            <div class="bio__content">
+            <div class="bio__content" data-aos="fade-left" data-aos-duration="2000">
                 <h3 class="title__tertiary">A Little About BJ</h3>
                 <?php the_content(); ?>
             </div>
@@ -39,7 +39,7 @@
         <h2 class="title__secondary">My Abilities</h2>
         <div class="flex__container--skills">
 
-            <div class="skills__container">
+            <div class="skills__container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
                 <h3 class="title__tertiary">Front End</h3>
                 <div class="grid__container">
                     <figure class="img__skill--container">
@@ -80,7 +80,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="skills__container">
+            <div class="skills__container" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <h3 class="title__tertiary">Web Tools</h3>
                 <div class="grid__container">
                     <figure class="img__skill--container">
@@ -148,7 +148,7 @@
             ));
             while ($testimonialPosts->have_posts()) {
                 $testimonialPosts->the_post(); ?>
-                <article class="flex__container--reviews">
+                <article class="flex__container--reviews" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                     <div class="img__title--container">
                         <img class="img__person rounded-circle img-fluid" src="<?php the_field('testimonial_image'); ?>">
                         <h4 class="dark-grey-text review__name"><?php the_title(); ?></h4>
