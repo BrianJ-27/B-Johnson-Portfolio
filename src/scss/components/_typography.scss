@@ -4,14 +4,14 @@
 
 //h1 styles
 .title__primary {
-  @include text-prop($size: 1.28em, $f-weight: 400, $color: $color-text-light);
+  @include text-prop($size: 2.5em, $f-weight: 200, $color: $color-text-light);
   @extend %text-modules;
+  text-align: center;
   @include mq("md") {
-    @include text-prop($size: 1.8em, $f-weight: 500);
+    @include text-prop($size: 4.2em);
   }
   @include mq("lg") {
-    @include text-prop($size: 1.1em);
-    text-align: center;
+    @include text-prop($size: 5.5em); 
   }
 }
 
@@ -20,7 +20,7 @@
   @include text-prop($size: 1.5em, $f-weight: 500, $color: $color-accent);
   @extend %text-modules;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 1em 0;
   &::after {
     content: "\003e";
     @extend %psuedo-sec-title;
@@ -70,23 +70,8 @@
 
 /*----CONTEXT STYLES----*/
 
-.content__banner {
-  padding: 0 0 0.5em 0.5em;
-  @include text-prop($size: 1em, $f-weight: 800, $color: $color-text-light);
-  text-align: center;
-  @include mq("md") {
-    @include text-prop($size: 1.4em, $f-weight: bold);
-  }
-  @include mq("lg") {
-    @include text-prop($size: 1.8em, $f-weight: 900);
-  }
-}
-
 
 // Styles for project title & content tags
-.title__overlay {
-  margin-top: 0.6em;
-}
 
 .tagline {
   text-align: center;
@@ -95,10 +80,6 @@
     font-weight: 600;
     letter-spacing: 1px;
   }
-}
-
-.card-title {
-  text-align: center;
 }
 
 .review__name {
@@ -118,32 +99,6 @@
   @include text-prop($size: 1em, $f-weight: 700, $l-height: 1);
 }
 
-.card-title {
-  @include text-prop($size: 1.1em, $f-weight: 600);
-  padding: 0.5em 0;
-  background: #024873;
-  color: #fff;
-}
-
-.card-text {
-  padding: 0.8em 1.5em;
-  @include text-prop($size: 1.1em, $f-weight: 500, $color: $color-text-dark);
-}
-
-//overlay title styles
-.title__overlay {
-  font-size: 1em;
-  text-transform: uppercase;
-  color: $color-text-dark;
-  text-align: center;
-  font-weight: bolder;
-}
-
-//contact title styles
-.contact__title {
-  text-align: center;
-}
-
 .social__name {
   margin-top: -1em;
   color: $white;
@@ -156,27 +111,11 @@
   text-transform: uppercase;
 }
 
-.header__title {
-  text-transform: uppercase;
-  font-size: 2.5em;
-  font-weight: 200;
-  @include mq("md") {
-    font-size: 4.2em;
-  }
-  @include mq("lg") {
-    font-size: 5.5em;
-  }
-}
-
 .sub__title {
+  color: $white;
   font-size: 1.4em;
   text-align: center;
   @include mq("md") {
     font-size: 2em;
   }
-}
-
-.header__title,
-.sub__title {
-  color: $white;
 }

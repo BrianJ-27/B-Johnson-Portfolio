@@ -48,7 +48,7 @@ let cssConfig = {
 
 let config = {
   entry: {
-    scripts: "./src/js/index.js" // YOu may need to adjust depending on your project
+    scripts: "./src/js/index.js" // YOu may need to adjust depending on the file structure of your project
   },
   plugins: [],
   module: {
@@ -122,7 +122,7 @@ if (currentTask == "build" || currentTask == "buildWatch") {
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   // postCSSPlugins.push(require("cssnano"))
   config.output = {
-    publicPath: "/wp-content/themes/portfolio-bj/", // changed here
+    publicPath: "/wp-content/themes/B-Johnson-Portfolio/", // changed here
     filename: "[name].[chunkhash].js",
     chunkFilename: "[name].[chunkhash].js",
     path: path.resolve(__dirname, "bundled-assets")

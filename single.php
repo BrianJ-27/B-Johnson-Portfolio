@@ -4,10 +4,9 @@
     <section class="post-container">
         <?php
         while(have_posts()){
-            the_post(); ?>
-            <div class="img__banner--container">
-                <div class="img__header--container" style="background-image: url(http://my-portfolio.local/wp-content/uploads/2021/03/BJ-Site-Portfolio-BG.png);">
-
+            the_post(); 
+            pageBanner();
+            ?>
                     <!--Banner Title Mark-up Starts Here-->
                     <div class="header__title--container">
                         <h1 class="header__title"><?php the_title(); ?></h1>
@@ -15,7 +14,7 @@
                         <hr class="title__underline">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="post-content">
                 <div class="link-info">
                     <h3><a href="<?php echo site_url('/blog'); ?>">Blog Home</a></h3>

@@ -27,14 +27,32 @@
     width: 100%;
     background-position: center;
     background-size: cover;
+    @include flex_me($just: center);
 }
 
 .bio__img--wrapper{
-    background: $color-secondary;
+    position: relative;
     width: 100%;
     border-radius: 1em 1em 0 0 ;
+    z-index: 1;
     @include mq('md'){
         flex-basis: 48%; 
+    }
+ }
+
+ .bio__img--wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35px;
+    height: 100%;
+    width: 75%;
+    background: $color-secondary;
+    opacity: .6;
+    z-index: -1;
+    border-radius: 44% 0;
+    @include mq('md'){
+        width: 85%;  
     }
  }
 
@@ -54,118 +72,6 @@
     }
 }
 
-.my__face--container{
-    width: 85%;
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-    bottom: 0;
-    height: 350px;
-    background: rgba(0,0,0,0.7);
-    border-radius: 80% 45% 0% 0%;
-    @include mq('md'){
-        width: 65%;
-     } 
-    @include mq ('lg'){
-      width: 45%;
-    }
-}
-
-.my__face {
-   width: 300px;
-   position: absolute;
-   bottom: 0;
-   animation: face .8s linear;
-   @include mq('md'){
-    width: 400px;
- } 
-}
-
-@keyframes face {
-    0% {
-        transform: scale(0) rotateX(90deg);
-        opacity: 0;
-    }
-    30% {
-        
-        opacity: .3;
-    
-    } 
-    50% {
-        
-        opacity: .5;
-    
-    } 
-    100% {
-        transform: scale(1) ;
-        opacity: 1;
-    } 
-}
-
-.logo__img--container{
-    @include flex_me($vertAlign:center);
-}
-
-.logo__img{
-    width: 50px;
-    height: auto;
-    @include mq ('lg'){
-        width: 65px;
-    }
-}
-.smoke__img{
-    width: 60px;
-    animation: smokey 5.5s linear infinite;
-    z-index: -1;
-}
-.smoke__img:nth-child(1){
-    animation-delay: 2s;
-    width: 100px;
-}
-.smoke__img:nth-child(2){
-    animation-delay: 6s;
-   
-}
-.smoke__img:nth-child(3){
-    animation-delay: 1s;
-    width: 35px;
-}
-.smoke__img:nth-child(4){
-    animation-delay: 3s;
-}
-.smoke__img:nth-child(5){
-    animation-delay: 7s;
-    width: 25px;
-}
-.smoke__img:nth-child(6){
-    animation-delay: 2s;
-}
-.smoke__img:nth-child(7){
-    animation-delay: 5s;
-    width: 70px;
-}
-
-@keyframes smokey {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50% {
-        
-        opacity: 1;
-    }
-    70% {
-        
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-85vh);
-        opacity: 0;
-    }
-}
-
-//styled the image with the background image to ensure it doesn't stretch on all screen sizes
-
 
 .img__skill--container{
     width: 100px;
@@ -181,7 +87,7 @@
 
 //Avatar image styling for reviews 
 .img__person{
-    @include roundy($dim:125px, $border: 1px solid $color-border-dark);
+    @include roundy($dim:150px, $border: 1px solid $color-border-dark);
     z-index: 2; 
     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
@@ -189,6 +95,12 @@
               0 8px 8px rgba(0,0,0,0.11), 
               0 16px 16px rgba(0,0,0,0.11), 
               0 32px 32px rgba(0,0,0,0.11);
+    @include mq ('md'){
+        @include roundy($dim:135px);
+    }
+    @include mq ('lg'){
+        @include roundy($dim:125px);
+    }   
 }
 
 .skill-icons{

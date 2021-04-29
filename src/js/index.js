@@ -3,9 +3,6 @@
 // **************************************
 import css from '../css/style.css'
 import scss from  '../scss/style.scss'
-import pngImgs from '../img/5th-project-resized.png'
-import jpgImgs from '../img/alicia.jpg'
-import svgsIcons from '../icons/Adobe-XD-Brand.svg'
 
 import ToggleNav from './mainNav'
 import { coolHdrColor }  from './hdrBarOnScroll'
@@ -45,23 +42,23 @@ const urls = [
 ]
 
 
-let html ="";
-const parentEl = document.querySelectorAll('.fat-hover-inner .category');
-console.log(parentEl);
-const div = document.createElement('div');
-div.classList.add('card__btn--container');
-urls.forEach( (url, ) => {
+// let html ="";
+// const parentEl = document.querySelectorAll('.fat-hover-inner .category');
+// console.log(parentEl);
+// const div = document.createElement('div');
+// div.classList.add('card__btn--container');
+// urls.forEach( (url, ) => {
     
-    let live = url.projectLive
-    let github = url.projectGithub
-    html = `
-        <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
-        <a class="btn__overlay" href="${github}" target="_blank">Github</a> 
-    `;
-    div.innerHTML = html
-    console.log(div);
-    parentEl.forEach(el, ()=> el.appendChild(div));
-});
+//     let live = url.projectLive
+//     let github = url.projectGithub
+//     html = `
+//         <a class="btn__overlay" href="${live}" target="_blank">Live Preview</a>
+//         <a class="btn__overlay" href="${github}" target="_blank">Github</a> 
+//     `;
+//     div.innerHTML = html
+//     console.log(div);
+//     parentEl.forEach(el, ()=> el.appendChild(div));
+// });
 
 
 
