@@ -41,7 +41,15 @@ function portfolio_files()
     // wp_enqueue_script( 'js-file', get_template_directory_uri() . './dist/main.js', NULL, '1.0', true);
     wp_enqueue_script('aos-js', '//unpkg.com/aos@next/dist/aos.js', NULL, '1.0', true);
     wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.4.1.min.js/', NULL, '1.0', true);
-    wp_enqueue_script('js-file', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
+    
+    if (strstr($_SERVER['SERVER_NAME'],'digitalportfolio.local')){
+        wp_enqueue_script('js-file', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
+    } else {
+        wp_enqueue_script('our-vendors-js-file', get_theme_file_uri('/bundled-assets/vendors~scripts.957f79dc444b653e4cc2.js'), NULL, '1.0', true);
+        wp_enqueue_script('js-file', get_theme_file_uri('/bundled-assets/scripts.30d3a8e317faee5a6c37.js'), NULL, '1.0', true);
+        wp_enqueue_style('main-styles', get_theme_file_uri('/bundled-assets/styles.30d3a8e317faee5a6c37.css'));
+    }
+    
 
     /**If comments are enabled by the user, and we are on a post page, 
     then the comment reply script will be loaded. Otherwise, it will not. */
