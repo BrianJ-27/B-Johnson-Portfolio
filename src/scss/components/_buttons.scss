@@ -15,12 +15,11 @@
     @include mq ('md'){
         width: 40%;
     }
-}
-
-.btn__overlay:nth-child(1) {
-    @include mq ('md'){
-        width: 100%;
-    }  
+    &:nth-child(1){
+        @include mq ('md'){
+            width: 100%;
+        }  
+    }
 }
 
 .btn__title{

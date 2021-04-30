@@ -53,6 +53,19 @@
     
 }
 
+%bio-grey-img-bg {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35px;
+    height: 100%;
+    width: 75%;
+    background: $color-secondary;
+    opacity: .6;
+    z-index: -1;
+    border-radius: 44% 0;
+}
+
 %fixed-header-prop{
     right: 0%;
     left:0;

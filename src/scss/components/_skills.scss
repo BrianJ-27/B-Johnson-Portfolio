@@ -1,0 +1,18 @@
+// **************************************
+// SKILLS SECTION STYLES
+// **************************************
+
+/*-------Skills Section Class Styles----------*/
+#skills{
+    padding-bottom: 6em;
+    background-attachment: fixed  !important;
+    box-shadow: 0 8px 7px -3px $white;
+  }
+  
+  .skill__grid--container{
+    display: grid;
+    max-width: 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    margin: 10px;
+  }

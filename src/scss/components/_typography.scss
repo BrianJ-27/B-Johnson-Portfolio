@@ -4,9 +4,8 @@
 
 //h1 styles
 .title__primary {
-  @include text-prop($size: 2.5em, $f-weight: 200, $color: $color-text-light);
+  @include text-prop($size: 2.5em, $f-weight: 200, $t-align:center, $color: $color-text-light);
   @extend %text-modules;
-  text-align: center;
   @include mq("md") {
     @include text-prop($size: 4.2em);
   }
@@ -17,9 +16,8 @@
 
 //h2 styles
 .title__secondary {
-  @include text-prop($size: 1.5em, $f-weight: 500, $color: $color-accent);
+  @include text-prop($size: 1.5em, $f-weight: 500, $color: $color-accent, $t-align:center);
   @extend %text-modules;
-  text-align: center;
   padding: 1em 0;
   &::after {
     content: "\003e";
@@ -40,8 +38,7 @@
 }
 
 #about__me > .title__secondary,
-#references > .title__secondary,
-.bio__text {
+#references > .title__secondary{
   color: $color-main-darkest;
 }
 
@@ -61,60 +58,51 @@
 
 //h3 Styles
 .title__tertiary {
-  @include text-prop($size: 1.4em, $color: $color-accent);
-  text-align: center;
+  @include text-prop($size: 1.4em, $color: $color-accent, $t-align:center);
   margin: 1em 0 0.8em 0;
   width: 100%;
 }
 
+//h4 Styles
+.title__quartiary {
+  @include text-prop($size: 1.5em, $f-weight: 600, $color:$color-main);
+}
+
+//h6 Styles
+.title__sixtiary {
+  @include text-prop($size: 1em, $f-weight: 700, $l-height: 1, $color: $color-main-darkest);
+}
+
 /*----CONTEXT STYLES----*/
 
+//site colors for <p> tags
+.white__txt{
+  color: $color-text-light;
+}
+
+.grey__text {
+  color: $color-text-base;
+}
 
 // Styles for project title & content tags
 
 .tagline {
-  text-align: center;
+  @include text-prop($t-align:center);
   @include mq("md") {
-    font-size: 1.5em;
-    font-weight: 600;
-    letter-spacing: 1px;
+    @include text-prop($size:1.5em, $f-weight:600);
   }
 }
 
-.review__name {
-  @include text-prop($size: 1.5em, $f-weight: 600);
-  color: $color-main;
-}
-
-.review__text {
-  color: $color-text-base;
-  @include mq('md'){
-    flex: 2;
-} 
-}
-
-.review__title,
-.review__company {
-  @include text-prop($size: 1em, $f-weight: 700, $l-height: 1);
-}
-
-.social__name {
-  margin-top: -.3em;
-  color: $white;
-  text-align: center;
-  font-size: 1.5em;
+.sub__title {
+  @include text-prop($size:1.4em, $t-align:center, $color: $color-text-light);
+  @include mq("md") {
+    @include text-prop($size:2em);
+  }
 }
 
 //styles for footer content
 .footer__text {
-  text-transform: uppercase;
+  @extend %text-modules;
 }
 
-.sub__title {
-  color: $white;
-  font-size: 1.4em;
-  text-align: center;
-  @include mq("md") {
-    font-size: 2em;
-  }
-}
+

@@ -1,0 +1,37 @@
+// **************************************
+// ABOUT ME SECTION STYLES
+// **************************************
+
+/*-------About Me Section Class Styles----------*/
+
+#about__me{
+    height: 100%;
+    border-bottom: 5px ridge $color-secondary;
+    background-color: $white;
+  }
+
+.bio__img--wrapper{
+    position: relative;
+    width: 100%;
+    border-radius: 1em 1em 0 0 ;
+    z-index: 1;
+    @include mq('md'){
+        flex-basis: 48%; 
+    }
+ }
+
+ .bio__img--wrapper::before{
+    @extend %bio-grey-img-bg;
+    @include mq('md'){
+        width: 85%;  
+    }
+ }
+
+.bio__content {
+    padding-bottom: 1.5em;
+    @include mq('md'){
+        flex-basis: 48%; 
+    }
+}
+
+  

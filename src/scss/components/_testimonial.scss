@@ -1,0 +1,42 @@
+// **************************************
+// TESTIMONIAL SECTION STYLES
+// **************************************
+
+/*-------References Section Class Styles----------*/
+
+#references {
+    background-color: $white;
+  }
+  
+  .flex__container--testimonials{
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    max-height: 550px;
+    background-color: $white;
+    @include mq ('md'){
+      width: 48%;
+    }
+    @include mq ('lg'){
+      width: 33%;
+    } 
+  } 
+  
+  // Styles for the testimonal image and titles area
+  .testimonial__title--container{
+    padding: 1em;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq('md'){
+      flex: 1;
+    } 
+  }
+
+  .review__text {
+    @include mq('md'){
+      flex: 2;
+    } 
+  }

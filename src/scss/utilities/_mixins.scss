@@ -19,15 +19,17 @@ Important reminders:
 }
 
 @mixin text-prop(
-  $size,
+  $size:null,
   $l-height:null,
   $f-weight:null,
-  $color:null)
+  $color:null,
+  $t-align:null,)
   {
     font-size: $size;
     line-height: $l-height;
     font-weight: $f-weight;
     color: $color;
+    text-align: $t-align;
 }
 
  //Create a flex container
