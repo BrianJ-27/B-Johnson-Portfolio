@@ -20,42 +20,42 @@
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#home')); ?>"></use>
                 </svg>
-                <a class="nav__link scroll" href="<?php echo esc_url(site_url()); ?>"> <?php _e('home'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url()); ?>"> <?php _e('home'); ?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#person')); ?>"></use>
                 </svg>
-                <a class="nav__link nav__icon2 scroll" href="<?php echo esc_url(site_url('#about__me')); ?>"><?php _e('about me'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url('#about__me')); ?>"><?php _e('about me'); ?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#skills')); ?>"></use>
                 </svg>
-                <a class="nav__link nav__icon3 scroll" href="<?php echo esc_url(site_url('#skills')); ?>"><?php _e('skills'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url('#skills')); ?>"><?php _e('skills'); ?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#experience')); ?>"></use>
                 </svg>
-                <a class="nav__link nav__icon4 scroll" href="<?php echo esc_url(site_url('#projects')); ?>"><?php _e('experience'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url('#projects')); ?>"><?php _e('experience'); ?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#references')); ?>"></use>
                 </svg>
-                <a class="nav__link nav__icon5 scroll" href="<?php echo esc_url(site_url('#references')); ?>"><?php _e('references'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url('#references')); ?>"><?php _e('references'); ?></a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="<?php echo esc_url(get_theme_file_uri('src/icons/bjs-icon-map.svg#contact')); ?>"></use>
                 </svg>
-                <a class="nav__link nav__icon6 scroll" href="<?php echo esc_url(site_url('#contact')); ?>"><?php _e('contact me'); ?></a>
+                <a class="nav__link" href="<?php echo esc_url(site_url('#contact')); ?>"><?php _e('contact me'); ?></a>
             </li>
             <!-- <li class="nav__item">
                 <svg class="nav__icon">

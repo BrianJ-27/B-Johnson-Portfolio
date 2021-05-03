@@ -39,14 +39,6 @@ main{
 }
 
 
-figure {
-    background-color: transparent;
-}
-
-figcaption{
-    color: white;
-}
-
 svg{
     width: 80px;
     max-width: 250px;
@@ -71,6 +63,7 @@ p {
 a {
     display: inline-block;
     padding: .6em;   
+    text-decoration: none;
 }
 
 footer {
