@@ -73,19 +73,18 @@
 
 // <a> link styles
 a.nav__link {
-  text-transform: uppercase;
-  transition: color 0.5s;
-  &:link {
-        color: $color-link-default ;
-        text-decoration: none;
-      }
-  &:visited {
-    color: $color-link-visited;
-  }
-  &:hover {
-    color: $color-link-hover;
-    text-decoration: none;
-  }
+    &:link {
+      color: $color-link-default !important;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $color-link-visited;
+    }
+    &:hover {
+      color: $color-link-hover !important;
+      text-decoration: none;
+    }
+    color: #fff !important;
 }
 
 // main nav SVG icons to the left of the links
