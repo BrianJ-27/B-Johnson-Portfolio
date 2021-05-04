@@ -46,8 +46,8 @@ function portfolio_files()
         wp_enqueue_script('js-file', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
     } else {
         wp_enqueue_script('our-vendors-js-file', get_theme_file_uri('/bundled-assets/vendors~scripts.957f79dc444b653e4cc2.js'), NULL, '1.0', true);
-        wp_enqueue_script('js-file', get_theme_file_uri('/bundled-assets/scripts.65046e016394d5abdfbe.js'), NULL, '1.0', true);
-        wp_enqueue_style('main-styles', get_theme_file_uri('/bundled-assets/styles.65046e016394d5abdfbe.css'));
+        wp_enqueue_script('js-file', get_theme_file_uri('/bundled-assets/scripts.975263102f110c34be66.js'), NULL, '1.0', true);
+        wp_enqueue_style('main-styles', get_theme_file_uri('/bundled-assets/styles.975263102f110c34be66.css'));
     }
     
 

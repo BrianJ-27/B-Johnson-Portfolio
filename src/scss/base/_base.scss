@@ -38,6 +38,9 @@ main{
     background: linear-gradient(to right, #0f0c29, $color-bg, #0f0c29); 
 }
 
+figcaption{
+    color: $color-text-light;
+}
 
 svg{
     width: 80px;
